@@ -1,0 +1,418 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html lang="en">
+
+<head>
+
+  <!-- Basic -->
+  <title>Biller XChange</title>
+
+  <!-- Define Charset -->
+  <meta charset="utf-8">
+
+  <!-- Responsive etatag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Page Description and Author -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <!-- Bootstrap CSS  -->
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" media="screen">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+
+  <!-- Slicknav -->
+  <link rel="stylesheet" type="text/css" href="css/slicknav.css" media="screen">
+
+  <!--  CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="red" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+
+  <!-- Responsive CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+
+  <!--  JS  -->
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery.migrate.js"></script>
+  <script type="text/javascript" src="js/modernizrr.js"></script>
+  <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="js/jquery.appear.js"></script>
+  <script type="text/javascript" src="js/count-to.js"></script>
+  <script type="text/javascript" src="js/jquery.textillate.js"></script>
+  <script type="text/javascript" src="js/jquery.lettering.js"></script>
+  <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+  <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax.js"></script>
+  <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+
+  <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Container -->
+  <div id="container">
+
+    <!-- Start Header -->
+    <div class="hidden-header"></div>
+    <header class="clearfix">
+
+      <!-- Start Top Bar -->
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Start Contact Info -->
+            </div>
+            <div class="col-md-6">
+              <!-- Start Social Links -->
+              <ul class="social-list">
+				<li>
+                  <a href="#">My Account</a>
+                </li>
+                <li>
+                  <a href="#">Cart</a>
+                </li>
+                <li>
+                  <a href="#">Help</a>
+                </li>
+              </ul>
+              <!-- End Social Links -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Top Bar -->
+
+      <!-- Start Header ( Logo & Naviagtion ) -->
+      <div class="navbar navbar-default navbar-top">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- Stat Toggle Nav Link For Mobiles -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+            <!-- End Toggle Nav Link For Mobiles -->
+            <a class="navbar-brand text-bold " href="index.html"><span class="blue">Biller</span> XChange</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Start Navigation List -->
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+			  <li>
+                <a class="active" href="invoice.html">Invoice</a>
+				<ul class="dropdown">
+				  <li><a class="active" href="invoice.html">Invoices</a></li>
+                  <li><a class="active" href="create-invoice.html">Create Invoice</a></li>
+				  <li><a class="active" href="bulk-load-invoice.html">Bulk Load Invoice</a></li>
+                </ul>
+              </li>
+			  <li>
+                <a href="suppliers.html">Suppliers</a>
+              </li>
+			  <li>
+                <a href="trasanctions.html">Trasanctions</a>
+              </li>
+			  <li>
+                <a href="netting.html">Netting</a>
+              </li>
+			  <li>
+                <a href="setup.html">Setup</a>
+              </li>
+            </ul>
+            <!-- End Navigation List -->
+          </div>
+        </div>
+
+      </div>
+
+    </header>
+
+    <div class="page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Create Invoice</h2>
+          </div>
+          <div class="col-md-6">
+            <ul class="breadcrumbs">
+              <li><a href="#">Home</a></li>
+              <li>Create Invoice</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="container">
+        <div class="page-content">
+
+
+          <div class="row">
+
+           
+			
+			<div class="col-md-6">
+				<div class="subHeader">General Info</div>
+				<div class="form-group col-md-6 paddingL0">
+				  <label >Supplier <span class="mandetory">*</span></label>
+				  <input type="text" class="form-control" placeholder="" name="">
+				</div>
+				<div class="form-group col-md-6 paddingR0">
+				  <label >Invoice # <span class="mandetory">*</span></label>
+				  <input type="text" class="form-control" placeholder="" name="">
+				</div>
+				<div class="form-group">
+				  <label >Invoice Date <span class="mandetory">*</span></label>
+				  <input type="date" class="form-control" placeholder="" name="">
+				</div>
+				<div class="form-group col-md-6 paddingL0">
+				  <label >Currency</label>
+				  <label class="lblvalue">USD</label>
+				</div>
+				<div class="form-group col-md-6 paddingR0">
+				  <label >Status</label>
+				  <label class="lblvalue">New</label>
+				</div>
+				<div class="form-group">
+				  <label >Supplier Note</label>
+				  <textarea class="form-control" placeholder="" name=""> </textarea>
+				</div>
+				<div class="form-group">
+				  <label >Requester <span class="mandetory">*</span></label>
+				  <input type="text" class="form-control" placeholder="" name="">
+				</div>
+				
+			</div>
+			<div class="col-md-6">
+				<div class="subHeader">Accounting & Remit-To</div>
+				
+				<div class="form-group col-md-6 paddingL0">
+				  <label >Chart of Accounts</label>
+				  <select class="form-control" placeholder="" name="">
+					<option>Select</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+				  </select>
+				</div>
+				<div class="form-group col-md-6 paddingR0">
+				  <label >Remit To</label>
+				  <div class="input-group">
+					 <input type="text" class="form-control" style="z-index:1">
+					 <span class="input-group-addon"><i class="fa fa-search"></i></span>
+				</div>
+				</div>
+				<div class="form-group col-md-6 paddingL0">
+				  <label >Supplier Tax ID</label>
+				  <select class="form-control" placeholder="" name="">
+					<option>Select</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+				  </select>
+				</div>
+				
+				<div class="clearfix"></div>
+				<a href="#"><i class="fa fa-plus-circle"></i> New Link</a>
+			</div>
+
+          </div>
+		  
+		  <div class="sectionSeperator"></div>
+		  <div class="subHeader">Lines 
+			<div class="pull-right"><input type="checkbox" name="transaction"><label for="transaction" >Line Level Taxation</label></div>
+		  </div>
+		  
+		  <div class="table-responsive linesContainer">          
+			  <table class="table">
+				<thead>
+				  <tr>
+					<th>Line #</th>
+					<th>Item Code</th>
+					<th>Unit Quantity</th>
+					<th>Unit Price</th>
+					<th>Net Amount</th>
+					<th>Tax Code</th>
+					<th>Tax Amount </th>
+					<th>Gross Amount</th>
+					<th>Tags</th>
+					<th>Actions</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>001</td>
+					<td>LN001</td>
+					<td>200</td>
+					<td>35</td>
+					<td>200</td>
+					<td>TX005</td>
+					<td>50</td>
+					<td>250.00</td>
+					<td><a href="#"><i class="fa fa-tags"></i> Add Tag</a></td>
+					<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+				  </tr>
+				  <tr>
+					<td>002</td>
+					<td><input type="text" class="form-control" placeholder="" name=""></td>
+					<td><input type="text" class="form-control" placeholder="" name=""></td>
+					<td><input type="text" class="form-control" placeholder="" name=""></td>
+					<td><input type="text" class="form-control" placeholder="" name=""></td>
+					<td><input type="text" class="form-control" placeholder="" name=""></td>
+					<td><input type="text" class="form-control" placeholder="" name=""></td>
+					<td>000.00</td>
+					<td><a href="#"><i class="fa fa-tags"></i> Add Tag</a></td>
+					<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+				  </tr>
+				</tbody>
+			  </table>
+			  </div>
+		  
+		  <div class="linkButtons">
+			<span><a href="#"><i class="fa fa-plus-circle"> </i> Add Line</a></span>
+			<span><a href="#"><i class="fa fa-plus-circle"> </i> Pick lines from PO</a></span>
+			<span><a href="#"><i class="fa fa-plus-circle"> </i> Pick lines from Contract</a></span>
+		  </div>
+		  
+		  <div class="marginT25"> </div>
+		  <div class="subHeader">Totals & Taxes</div>
+		  <div class="col-md-12 gray_bg paddingTB10">
+			<div class="col-md-12">
+			  <div class="form-group col-md-6">
+				<label >Lines Net Total:</label>
+				<label class="lblvalue">000.00</label>
+			  </div>
+			  <div class="form-group col-md-6">
+				<label >Lines Tax Totals:</label>
+				<label class="lblvalue">000.00</label>
+			  </div>
+			</div>
+			<div class="clearfix"></div>
+			<hr>
+			<div class="col-md-12">
+				<div class="col-md-3"><label >Shipping:</label></div>
+				<div class="col-md-3 form-group pull-right"><input type="text" class="form-control" placeholder="" name=""></div>
+				<div class="clearfix"></div>
+				<div class="col-md-3"><label >Tax:</label></div>
+				<div class="col-md-3 form-group">
+					<select class="form-control" placeholder="" name="">
+					<option>Select</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+					</select>
+				</div>
+				<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
+				<div class="col-md-3"><input type="text" class="form-control" placeholder="00.00" name="00.00"></div>
+				<div class="clearfix"></div>
+				<div class="col-md-3"><label >Tax Reference:</label></div>
+				<div class="col-md-9 form-group"><input type="text" class="form-control" placeholder="" name=""></div>
+				<div class="clearfix"></div>
+				<hr>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-3"><label >Handling:</label></div>
+				<div class="col-md-3 form-group pull-right"><input type="text" class="form-control" placeholder="" name=""></div>
+				<div class="clearfix"></div>
+				<div class="col-md-3"><label >Tax:</label></div>
+				<div class="col-md-3 form-group">
+					<select class="form-control" placeholder="" name="">
+					<option>Select</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+					</select>
+				</div>
+				<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
+				<div class="col-md-3"><input type="text" class="form-control" placeholder="00.00" name="00.00"></div>
+				<div class="clearfix"></div>
+				<div class="col-md-3"><label >Tax Reference:</label></div>
+				<div class="col-md-9 form-group"><input type="text" class="form-control" placeholder="" name=""></div>
+				<div class="clearfix"></div>
+				<hr>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-3"><label >Misc:</label></div>
+				<div class="col-md-3 form-group pull-right"><input type="text" class="form-control" placeholder="" name=""></div>
+				<div class="clearfix"></div>
+				<div class="col-md-3"><label >Tax:</label></div>
+				<div class="col-md-3 form-group">
+					<select class="form-control" placeholder="" name="">
+					<option>Select</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+					</select>
+				</div>
+				<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
+				<div class="col-md-3"><input type="text" class="form-control" placeholder="00.00" name="00.00"></div>
+				<div class="clearfix"></div>
+				<div class="col-md-3"><label >Tax Reference:</label></div>
+				<div class="col-md-9 form-group"><input type="text" class="form-control" placeholder="" name=""></div>
+				<div class="clearfix"></div>
+				<hr>
+			</div>
+			<div class="col-md-12">
+				<div class="col-md-3"><label >Tax Total:</label></div>
+				<div class="col-md-3 form-group pull-right"><label >000.00</label></div>
+				<div class="clearfix"></div>
+				<div class="col-md-3"><label >Net Total:</label></div>
+				<div class="col-md-3 form-group pull-right"><label >000.00</label></div>
+				<div class="clearfix"></div>
+				<div class="col-md-3 text-bold largeFont"><label >Total:</label></div>
+				<div class="col-md-3 form-group pull-right largeFont"><label >000.00</label></div>
+			</div>
+			
+			</div>
+			<div class="col-md-12 marginT25 btnContainer text-right">
+			  <button type="button" class="btn btn-default">Delete</button>
+			  <button type="button" class="btn btn-default">Calculate</button>
+			  <button type="button" class="btn btn-default">Save</button>
+			  <button type="button" class="btn btn-primary">Submit</button>      
+			</div>
+			
+		  </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End content -->
+
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <!-- Start Copyright -->
+        <div class="copyright-section">
+          <div class="row">
+            <div class="col-md-12">
+              <p>&copy; 2018 Biller XChange - All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Copyright -->
+
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+  </div>
+  <!-- End Container -->
+
+  <!-- Go To Top Link -->
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>
