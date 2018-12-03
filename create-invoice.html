@@ -161,40 +161,73 @@
         <div class="page-content">
 
 
-          <div class="row">
-
-           
+          <div class="row">  
 			
 			<div class="col-md-6">
 				<div class="subHeader">General Info</div>
 				<div class="form-group col-md-6 paddingL0">
-				  <label >Supplier <span class="mandetory">*</span></label>
+				  <label >Invoice Number <span class="mandetory">*</span></label>
 				  <input type="text" class="form-control" placeholder="" name="">
 				</div>
 				<div class="form-group col-md-6 paddingR0">
-				  <label >Invoice # <span class="mandetory">*</span></label>
-				  <input type="text" class="form-control" placeholder="" name="">
-				</div>
-				<div class="form-group">
-				  <label >Invoice Date <span class="mandetory">*</span></label>
+				  <label >Invoice Date<span class="mandetory">*</span></label>
 				  <input type="date" class="form-control" placeholder="" name="">
 				</div>
 				<div class="form-group col-md-6 paddingL0">
-				  <label >Currency</label>
+				  <label>Buyer Code</label>
+				  <select class="form-control" placeholder="" name="">
+					<option>Select</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+				  </select>
+				</div>
+				<div class="form-group col-md-6 paddingR0">
+				  <label>Seller Code</label>
+				  <select class="form-control" placeholder="" name="">
+					<option>Select</option>
+					<option>Option 1</option>
+					<option>Option 2</option>
+				  </select>
+				</div>
+				<div class="form-group col-md-4 paddingL0">
+				  <label >Accounting Period<span class="mandetory">*</span></label>
+				  <input type="text" class="form-control" placeholder="" name="">
+				</div>
+				<div class="form-group col-md-4">
+				  <label >Reference Code<span class="mandetory">*</span></label>
+				  <input type="text" class="form-control" placeholder="" name="">
+				</div>
+				<div class="form-group col-md-4 paddingR0">
+				  <label>Settlement Type</label>
+				  <select class="form-control" placeholder="" name="">
+					<option>Select</option>
+					<option>Aggregate</option>
+					<option>Individual</option>
+				  </select>
+				</div>
+				
+				
+				<div class="form-group col-md-6 paddingL0">
+				  <label >From Account</label>
+				  <label class="lblvalue">Lbl Value</label>
+				</div>
+				<div class="form-group col-md-6 paddingR0">
+				  <label >To Account</label>
+				  <label class="lblvalue">Account</label>
+				</div>
+				<div class="form-group col-md-6 paddingL0">
+				  <label >Buyer Currency</label>
 				  <label class="lblvalue">USD</label>
 				</div>
 				<div class="form-group col-md-6 paddingR0">
-				  <label >Status</label>
+				  <label >Seller Currency</label>
+				  <label class="lblvalue">USD</label>
+				</div>
+				<div class="form-group col-md-6 paddingL0">
+				  <label >Invoice Status</label>
 				  <label class="lblvalue">New</label>
 				</div>
-				<div class="form-group">
-				  <label >Supplier Note</label>
-				  <textarea class="form-control" placeholder="" name=""> </textarea>
-				</div>
-				<div class="form-group">
-				  <label >Requester <span class="mandetory">*</span></label>
-				  <input type="text" class="form-control" placeholder="" name="">
-				</div>
+
 				
 			</div>
 			<div class="col-md-6">
@@ -251,28 +284,16 @@
 					<th>Actions</th>
 				  </tr>
 				</thead>
-				<tbody>
-				  <tr>
-					<td>001</td>
-					<td>LN001</td>
-					<td>200</td>
-					<td>35</td>
-					<td>200</td>
-					<td>TX005</td>
-					<td>50</td>
-					<td>250.00</td>
-					<td><a href="#"><i class="fa fa-tags"></i> Add Tag</a></td>
-					<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-				  </tr>
-				  <tr>
-					<td>002</td>
+				<tbody class="results">
+				  <tr class="addedLine">
 					<td><input type="text" class="form-control" placeholder="" name=""></td>
 					<td><input type="text" class="form-control" placeholder="" name=""></td>
 					<td><input type="text" class="form-control" placeholder="" name=""></td>
 					<td><input type="text" class="form-control" placeholder="" name=""></td>
 					<td><input type="text" class="form-control" placeholder="" name=""></td>
 					<td><input type="text" class="form-control" placeholder="" name=""></td>
-					<td>000.00</td>
+					<td><input type="text" class="form-control" placeholder="" name=""></td>
+					<td><input type="text" class="form-control" placeholder="" name=""></td>
 					<td><a href="#"><i class="fa fa-tags"></i> Add Tag</a></td>
 					<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
 				  </tr>
@@ -281,7 +302,7 @@
 			  </div>
 		  
 		  <div class="linkButtons">
-			<span><a href="#"><i class="fa fa-plus-circle"> </i> Add Line</a></span>
+			<span><a href="#" class="addLine"><i class="fa fa-plus-circle"> </i> Add Line</a></span>
 			<span><a href="#"><i class="fa fa-plus-circle"> </i> Pick lines from PO</a></span>
 			<span><a href="#"><i class="fa fa-plus-circle"> </i> Pick lines from Contract</a></span>
 		  </div>
@@ -412,6 +433,17 @@
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <script type="text/javascript" src="js/script.js"></script>
+  
+   <script>
+	$(document).ready(function(){
+    $(".addLine").click(function(){
+		$('.addedLine:last-child').clone().appendTo(".linesContainer table .results");
+    });
+	$('.linesContainer').find(".fa-trash-o").click(function(){ alert(2);
+        $(this).closest(".addedLine").remove();
+	});
+});
+  </script>
 
 </body>
 
