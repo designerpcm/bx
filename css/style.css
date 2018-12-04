@@ -5665,7 +5665,10 @@ input[type=checkbox], input[type=radio] {margin: 3px 4px 0;vertical-align:middle
 .actionIcons .fa{margin-right:10px;}
 .linesContainer table td, .linesContainer table th{white-space:nowrap;}
 .linesContainer input.form-control{height:30px;}
-
+.legalEntity .form-control{height:30px;padding:4px;}
+.legalEntities tr th, .legalEntities tr td{padding:8px 2px !important;} 
+.w7 {width:7%;}
+.w10 {width:10%;}
 
 /* ===== Drag and Drop =====*/
 .connected, .sortable, .exclude, .handles {
