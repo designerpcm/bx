@@ -5639,6 +5639,7 @@ ul.footer-nav li a:hover {
 .mediumFont{font-size:160%;}
 .padding10{padding:10px;}
 .paddingTB10{padding:10px 0;}
+.colorBlue{color:blue;}
 
 .page-banner{background:#007ac3;margin-top;-2px; border-bottom: 10px solid #dadada; padding:20px 0; }
 .page-banner h2{color: #fff;}
@@ -5669,6 +5670,17 @@ input[type=checkbox], input[type=radio] {margin: 3px 4px 0;vertical-align:middle
 .legalEntities tr th, .legalEntities tr td{padding:8px 2px !important;} 
 .w7 {width:7%;}
 .w10 {width:10%;}
+.panel-title a{background:none !important;color:blue}
+.companyList .panel-title a .control-icon{margin-top:0;}
+.companyList .panel-title label{font-weight:normal;}
+.companyList .panel-default{border:none; border-bottom:1px solid #f1f1f1;}
+.companyList .panel-default>.panel-heading{background:none;}
+.companyList .panel-title a{padding:0;}
+.tableHeader{padding:10px 15px;}
+.companyList .panel-body{padding:5px 30px;background-color:#f9f9f9;font-size:98%;}
+.companyList .panel-body .subTitle{margin-bottom:5px;}
+.companyList.panel-group{margin-bottom:10px;}
+
 
 /* ===== Drag and Drop =====*/
 .connected, .sortable, .exclude, .handles {
