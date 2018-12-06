@@ -5644,7 +5644,7 @@ ul.footer-nav li a:hover {
 .page-banner{background:#007ac3;margin-top;-2px; border-bottom: 10px solid #dadada; padding:20px 0; }
 .page-banner h2{color: #fff;}
 .mandetory{color:red;}
-input[type=checkbox].form-control, input[type=radio].form-control {width:25px;}
+input[type=checkbox].form-control, input[type=radio].form-control {width:20px;height:20px;}
 .lblvalue{font-weight:normal; display:block;}
 input[type=file].form-control {display: block; padding: 6px 0; width: auto; border: none;}
 .subHeader{padding:5px 0;margin-bottom:10px; border-bottom:1px dotted #474747;font-size:21px;font-weight:normal;color:#007ac3;}
@@ -5679,7 +5679,8 @@ input[type=checkbox], input[type=radio] {margin: 3px 4px 0;vertical-align:middle
 .tableHeader{padding:10px 15px;}
 .companyList .panel-body{padding:5px 30px;background-color:#f9f9f9;font-size:98%;}
 .companyList .panel-body .subTitle{margin-bottom:5px;}
-.companyList.panel-group{margin-bottom:10px;}
+.companyList.panel-group{margin-bottom:10px}
+.subContainer{padding: 10px 20px;    border: 5px solid #e8e8e8;overflow: auto;}
 
 
 /* ===== Drag and Drop =====*/
