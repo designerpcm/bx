@@ -120,7 +120,11 @@
                 </ul>
               </li>
 			  <li>
-                <a href="suppliers.html">Suppliers</a>
+                <a href="company-list.html">Company</a>
+				<ul class="dropdown">
+				  <li><a class="active" href="company-list.html">Company List</a></li>
+                  <li><a class="active" href="company-info.html">Create Company</a></li>
+                </ul>
               </li>
 			  <li>
                 <a href="trasanctions.html">Trasanctions</a>
@@ -168,15 +172,27 @@
         <div class="page-content">
           <div class="row">
 			<div class="gray_bg col-md-12 padding10">
-				<div class="col-md-1 pull-right"><button class="btn btn-primary btn-sm">Search</button></div>
-				<div class="col-md-2  pull-right"><select class="form-control" placeholder="" name="">
-					<option>Select</option>
-					<option>Option 1</option>
-					<option>Option 2</option>
-				  </select>
+				<div class="col-md-6 schedular">
+					<div class="col-md-4"><input type="date" class="form-control" placeholder="Date" name=""></div>
+					<div class="col-md-3"><input type="time" class="form-control" placeholder="Time" name=""></div>
+					<div class="col-md-3"><select class="form-control" placeholder="" name="">
+						<option>Daily</option>
+						<option>Weekly</option>
+						<option>Monthly</option><option>Quarterly</option><option>Half Yearly</option><option>Yearly</option>
+					  </select></div>
+					<div class="col-md-2"><button class="btn btn-primary btn-sm">Schedule</button></div>
 				</div>
-				<div class="col-md-2  pull-right"><input type="text" class="form-control" placeholder="Supplier" name=""></div>
-				<div class="col-md-2 pull-right"><input type="text" class="form-control" placeholder="Buyer" name=""></div>				
+				<div class="col-md-6">
+					<div class="col-md-2 pull-right"><button class="btn btn-primary btn-sm">Search</button></div>
+					<div class="col-md-3  pull-right"><select class="form-control" placeholder="" name="">
+						<option>Select</option>
+						<option>Option 1</option>
+						<option>Option 2</option>
+					  </select>
+					</div>
+					<div class="col-md-3  pull-right"><input type="text" class="form-control" placeholder="Supplier" name=""></div>
+					<div class="col-md-3 pull-right"><input type="text" class="form-control" placeholder="Buyer" name=""></div>
+				</div>
 			</div>
 			<div class="clearfix"> </div>
             <div class="table-responsive">          
@@ -229,7 +245,6 @@
 			  </div>
 			  <div class="col-md-1"><button class="btn btn-primary btn-sm">Netting</button></div>
 			  <div class="clearfix"> </div>
-			  <div class="marginTB25"> </div>
 			  <div class="subContainer">
 				<div class="subTitle">Payment Categories</div>
 				<div class="col-md-12">

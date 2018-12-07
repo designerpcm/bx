@@ -139,9 +139,12 @@
                 </ul>
               </li>
 			  <li>
-                <a href="suppliers.html">Suppliers</a>
+                <a href="company-list.html">Company</a>
+				<ul class="dropdown">
+				  <li><a class="active" href="company-list.html">Company List</a></li>
+                  <li><a class="active" href="company-info.html">Create Company</a></li>
+                </ul>
               </li>
-			  <li>
                 <a href="trasanctions.html">Trasanctions</a>
               </li>
 			  <li>
@@ -227,6 +230,7 @@
 				</div>
 				<!-- <div class="pull-right"><a href="#" class="btn btn-primary">Add group of Conditions</a></div> -->
 			</div>
+			<div class="conditionsGroupContainer">
 			<div class="col-md-12 padding10 conditionsGroup">
 				<div class="col-md-2"> </div>
 				<div class="col-md-2 paddingL0">
@@ -242,7 +246,7 @@
 				  </select>
 				</div>
 				<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
-				<div class="col-md-1"><i class="fa fa-plus-circle"> </i> | <i class="fa fa-trash"> </i></div>
+				<div class="col-md-1"></div>
 			</div>
 			<div class="col-md-12 padding10 conditionsGroup">
 				<div class="col-md-2"><select class="form-control" placeholder="" name="">
@@ -263,6 +267,7 @@
 				</div>
 				<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
 				<div class="col-md-1"><i class="fa fa-plus-circle"> </i> | <i class="fa fa-trash"> </i></div>
+			</div>
 			</div>
 			<div class="clearfix"> </div>
 		  
@@ -336,6 +341,17 @@
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
   <script type="text/javascript" src="js/script.js"></script>
+  
+  <script>
+	$(document).ready(function(){
+    $(".fa-plus-circle").click(function(){
+        $(this).parents(".conditionsGroup").clone().appendTo($(this).parents(".conditionsGroupContainer"));
+    });
+	$(".fa-trash").click(function(){ alert(1);
+        $(this).parents(".conditionsGroup").remove();
+	});
+});
+  </script>
 
 </body>
 
