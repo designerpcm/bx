@@ -112,7 +112,7 @@
                 <a href="index.html">Home</a>
               </li>
 			  <li>
-                <a class="active" href="invoice.html">Invoice</a>
+                <a href="invoice.html">Invoice</a>
 				<ul class="dropdown">
 				  <li><a class="active" href="invoice.html">Invoices</a></li>
                   <li><a class="active" href="create-invoice.html">Create Invoice</a></li>
@@ -127,7 +127,7 @@
                 </ul>
               </li>
 			  <li>
-                <a href="transactions.html">Transactions</a>
+                <a class="active" href="transactions.html">Transactions</a>
               </li>
 			  <li>
                 <a href="netting.html">Netting</a>
@@ -152,12 +152,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h2>Invoices</h2>
+            <h2>Transactions</h2>
           </div>
           <div class="col-md-6">
             <ul class="breadcrumbs">
               <li><a href="#">Home</a></li>
-              <li>Invoices</li>
+              <li>Transactions</li>
             </ul>
           </div>
         </div>
@@ -170,224 +170,55 @@
     <div id="content">
       <div class="container">
         <div class="page-content">
-
-
-          <div class="row invoicesContainer">
-			<div class="gray_bg col-md-12 padding10">
-				<a href="create-invoice.html" class="btn btn-primary btn-sm">Create</a>
-				<a href="bulk-load-invoice.html" class="btn btn-primary btn-sm">Load from File</a>
-				<a href="#" class="btn btn-primary btn-sm">Export</a>
-				<span class="pull-right">View <select class="" placeholder="" name="">
-					<option>Create View</option>
-					<option>Option 1</option>
-					<option>Option 2</option>
-				  </select>
-				</span>
-			</div>
+          <div class="">
+			
 			<div class="clearfix"> </div>
-			<div class="table-responsive">          
+            <div class="table-responsive">          
 			  <table class="table">
 				<thead>
 				  <tr>
-					<th>Invoice #</th>
-					<th>Supplier</th>
-					<th>Net Due Date</th>
-					<th>Total</th>
-					<th>Status</th>
-					<th>Delivery Method</th>
-					<th>Actions </th>
-					<th>Current Approver</th>
-					<th>Current Approver Group</th>
-					<th>Dispute Method</th>
-					<th>Discount APR</th>
+					<th>Block Number</th>
+					<th>Channel Name</th>
+					<th>Number of Tx.</th>
+					<th>Data Hash</th>
+					<th>Blcok Hash</th>
+					<th>Previous Hash</th>
+					<th>Transactions</th>
 				  </tr>
 				</thead>
+				<tbody>
+				  <tr>
+					<td>005</td>
+					<td>05/12/18</td>
+					<td>KD Traders</td>
+					<td>SM Traders</td>
+					<td>35,000</td>
+					<td>In Progress</td>
+					<td>Web Portal</td>
+				  </tr>
+				  <tr>
+					<td>005</td>
+					<td>05/12/18</td>
+					<td>KD Traders</td>
+					<td>SM Traders</td>
+					<td>35,000</td>
+					<td>In Progress</td>
+					<td>Web Portal</td>
+				  </tr>
+				  <tr>
+					<td>005</td>
+					<td>05/12/18</td>
+					<td>KD Traders</td>
+					<td>SM Traders</td>
+					<td>35,000</td>
+					<td>In Progress</td>
+					<td>Web Portal</td>
+				  </tr>
+				</tbody>
 			  </table>
 			  </div>
-			<div class="clearfix"> </div>
-			<div class="panel-group companyList" id="accordion">
-				  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-										
-								<div class="table-responsive">          
-							  <table class="table">
-								<tbody>
-								  <tr>
-									<td>005</td>
-									<td><a data-toggle="collapse" data-parent="#accordion" href="#line1" aria-expanded="false" class="collapsed">	KD Traders </a></td>
-									<td>25/11/2018</td>
-									<td>35</td>
-									<td>In Progress</td>
-									<td>Web Portal</td>
-									<td><i class="fa fa-edit"> </i></td>
-									<td>Rajesh</td>
-									<td>KD</td>
-									<td>None</td>
-									<td>None</td>
-								  </tr>
-							  </table>
-							  </div>
-						</h4>
-                    </div>
-					<div class="clearfix"> </div>
-                    <div id="line1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                      <div class="panel-body">
-					  
-					  <div class="subTitle">Lines</div>
-						<div class="table-responsive linesContainer">          
-						  <table class="table">
-							<thead>
-							  <tr>
-								<th>Line #</th>
-								<th>Item Code</th>
-								<th>Unit Quantity</th>
-								<th>Unit Price</th>
-								<th>Net Amount</th>
-								<th>Tax Code</th>
-								<th>Tax Amount </th>
-								<th>Gross Amount</th>
-								<th>Tags</th>
-								<th>Actions</th>
-							  </tr>
-							</thead>
-							<tbody class="results">
-							  <tr class="addedLine">
-								<td>001</td>
-								<td>02154</td>
-								<td>50</td>
-								<td>100</td>
-								<td>5000</td>
-								<td>TX005</td>
-								<td>500</td>
-								<td>5500</td>
-								<td><a href="#"><i class="fa fa-tags"></i> Add Tag</a></td>
-								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-							  </tr>
-							  <tr class="addedLine">
-								<td>001</td>
-								<td>02154</td>
-								<td>50</td>
-								<td>100</td>
-								<td>5000</td>
-								<td>TX005</td>
-								<td>500</td>
-								<td>5500</td>
-								<td><a href="#"><i class="fa fa-tags"></i> Add Tag</a></td>
-								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-							  </tr>
-							  <tr class="addedLine">
-								<td>001</td>
-								<td>02154</td>
-								<td>50</td>
-								<td>100</td>
-								<td>5000</td>
-								<td>TX005</td>
-								<td>500</td>
-								<td>5500</td>
-								<td><a href="#"><i class="fa fa-tags"></i> Add Tag</a></td>
-								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-							  </tr>
-							</tbody>
-						  </table>
-						  </div>
-					  </div>
-                    </div>
-                  </div>
-			</div>
-			<div class="panel-group companyList" id="accordion">
-				  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-										
-								<div class="table-responsive">          
-							  <table class="table">
-								<tbody>
-								  <tr>
-									<td>125</td>
-									<td><a data-toggle="collapse" data-parent="#accordion" href="#line2" aria-expanded="false" class="collapsed"> Microsoft Inc.</a></td>
-									<td>25/11/2018</td>
-									<td>35</td>
-									<td>In Progress</td>
-									<td>Web Portal</td>
-									<td><i class="fa fa-edit"> </i></td>
-									<td>Rajesh</td>
-									<td>KD</td>
-									<td>None</td>
-									<td>None</td>
-								  </tr>
-							  </table>
-							  </div>
-						</h4>
-                    </div>
-					<div class="clearfix"> </div>
-                    <div id="line2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                      <div class="panel-body">
-					  
-					  <div class="subTitle">Lines</div>
-						<div class="table-responsive linesContainer">          
-						  <table class="table">
-							<thead>
-							  <tr>
-								<th>Line #</th>
-								<th>Item Code</th>
-								<th>Unit Quantity</th>
-								<th>Unit Price</th>
-								<th>Net Amount</th>
-								<th>Tax Code</th>
-								<th>Tax Amount </th>
-								<th>Gross Amount</th>
-								<th>Tags</th>
-								<th>Actions</th>
-							  </tr>
-							</thead>
-							<tbody class="results">
-							  <tr class="addedLine">
-								<td>001</td>
-								<td>02154</td>
-								<td>50</td>
-								<td>100</td>
-								<td>5000</td>
-								<td>TX005</td>
-								<td>500</td>
-								<td>5500</td>
-								<td><a href="#"><i class="fa fa-tags"></i> Add Tag</a></td>
-								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-							  </tr>
-							  <tr class="addedLine">
-								<td>001</td>
-								<td>02154</td>
-								<td>50</td>
-								<td>100</td>
-								<td>5000</td>
-								<td>TX005</td>
-								<td>500</td>
-								<td>5500</td>
-								<td><a href="#"><i class="fa fa-tags"></i> Add Tag</a></td>
-								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-							  </tr>
-							  <tr class="addedLine">
-								<td>001</td>
-								<td>02154</td>
-								<td>50</td>
-								<td>100</td>
-								<td>5000</td>
-								<td>TX005</td>
-								<td>500</td>
-								<td>5500</td>
-								<td><a href="#"><i class="fa fa-tags"></i> Add Tag</a></td>
-								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-							  </tr>
-							</tbody>
-						  </table>
-						  </div>
-					  </div>
-                    </div>
-                  </div>
-			</div>
-			
-			
-            
+			  <div class="clearfix"> </div>
+			  
            
           </div>
 
@@ -422,6 +253,15 @@
 
   <script type="text/javascript" src="js/script.js"></script>
 
+  <script>
+	//select all checkboxes
+	$("#select_all").change(function(){  //"select all" change 
+		var status = this.checked; // "select all" checked status
+		$('.checkbox').each(function(){ //iterate all listed checkbox items
+			this.checked = status; //change ".checkbox" checked status
+		});
+	});
+  </script>
 </body>
 
 </html>
