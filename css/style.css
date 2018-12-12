@@ -5682,6 +5682,9 @@ input[type=checkbox], input[type=radio] {margin: 3px 4px 0;vertical-align:middle
 .companyList.panel-group{margin-bottom:10px}
 .subContainer{padding: 10px 20px;    border: 5px solid #f1f1f1;overflow: auto;margin:15px 0;background:#f9f9f9;}
 .schedular .form-control{padding:6px;}
+.invoicesContainer table th, .invoicesContainer table td{width:90px;}
+.invoicesContainer .table, .invoicesContainer .companyList.panel-group{margin-bottom:0}
+.invoicesContainer .panel-title a.collapsed{color:#007ac3; text-decoration:none;}
 
 /* ===== Drag and Drop =====*/
 .connected, .sortable, .exclude, .handles {
