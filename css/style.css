@@ -5686,6 +5686,33 @@ input[type=checkbox], input[type=radio] {margin: 3px 4px 0;vertical-align:middle
 .invoicesContainer .table, .invoicesContainer .companyList.panel-group{margin-bottom:0}
 .invoicesContainer .panel-title a.collapsed{color:#007ac3; text-decoration:none;}
 
+
+/*===== Login Page =====*/
+.login-page, .register-page {
+    background: #d2d6de;
+}
+.login-box, .register-box {
+    width: 360px;
+    margin: 7% auto;
+}
+.login-logo, .register-logo {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+.login-box-body, .register-box-body {
+    background: #fff;
+    padding: 20px;
+    border-top: 0;
+    color: #666;
+}
+.login-box-msg, .register-box-msg {
+    margin: 0;
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+
 /* ===== Drag and Drop =====*/
 .connected, .sortable, .exclude, .handles {
 			margin: auto;
