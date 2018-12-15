@@ -5640,6 +5640,10 @@ ul.footer-nav li a:hover {
 .padding10{padding:10px;}
 .paddingTB10{padding:10px 0;}
 .colorBlue{color:blue;}
+.font150{font-size:150%;}
+.font200{font-size:200%;}
+.colorRed{color:red;}
+.fontNormal{font-weight:normal;}
 
 .page-banner{background:#007ac3;margin-top;-2px; border-bottom: 10px solid #dadada; padding:20px 0; }
 .page-banner h2{color: #fff;}
@@ -5685,7 +5689,9 @@ input[type=checkbox], input[type=radio] {margin: 3px 4px 0;vertical-align:middle
 .invoicesContainer table th, .invoicesContainer table td{width:90px;}
 .invoicesContainer .table, .invoicesContainer .companyList.panel-group{margin-bottom:0}
 .invoicesContainer .panel-title a.collapsed{color:#007ac3; text-decoration:none;}
-
+.small-box h3, .small-box p{color:#fff}
+.legendsOrders span{display:inline-block;width:12px; height:12px;background:#4bb2c5;}
+.legendsInvoice span{display:inline-block;width:12px; height:12px;background:#eaa228;}
 
 /*===== Login Page =====*/
 .login-page, .register-page {
