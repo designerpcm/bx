@@ -5695,6 +5695,10 @@ input[type=checkbox], input[type=radio] {margin: 3px 4px 0;vertical-align:middle
 .small-box h3, .small-box p{color:#fff}
 .legendsOrders span{display:inline-block;width:12px; height:12px;background:#4bb2c5;}
 .legendsInvoice span{display:inline-block;width:12px; height:12px;background:#eaa228;}
+#exposure .modal-dialog {
+    width: 400px;
+    margin: 120px auto;
+}
 
 /*===== Login Page =====*/
 .login-page, .register-page {
