@@ -60,7 +60,7 @@
 
 </head>
 
-<body>
+<body class="theme">
 
   <!-- Container -->
   <div id="container">
@@ -77,19 +77,16 @@
               <!-- Start Contact Info -->
             </div>
             <div class="col-md-6">
-              <!-- Start Social Links -->
-              <ul class="social-list">
-				<li>
-                  <a href="#">My Account</a>
-                </li>
-                <li>
-                  <a href="#">Cart</a>
-                </li>
-                <li>
-                  <a href="#">Help</a>
-                </li>
-              </ul>
-              <!-- End Social Links -->
+              <div class="dropdown pull-right">
+				  <span class="dropdown-toggle" data-toggle="dropdown">Admin User
+				  <span class="caret"></span></span>
+				  <ul class="dropdown-menu">
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Logout</a></li>
+				  </ul>
+				</div>
             </div>
           </div>
         </div>
@@ -170,95 +167,85 @@
 
     <!-- Start Content -->
     <div id="content">
-      <div class="container">
+      <div class="container profile">
         <section class="content">
           <!-- Small boxes (Stat box) -->
           <div class="row">
-            <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="small-box bg-aqua">
-                <div class="inner">
-                  <h3>15</h3>
-                  <p>Orders Received</p>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+				<div class="box box-widget widget-user-2">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+                <div class="widget-user-header bg-yellow">
+                  <h3 class="widget-user-username">-$451,500.00</h3>
+                  <h5 class="widget-user-desc">Outstanding Exposure</h5>
                 </div>
-                <div class="icon">
-                  <i class="ion ion-bag"></i>
-                </div>
-              </div>
-            </div><!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="small-box bg-green">
-                <div class="inner">
-                  <h3>09</h3>
-                  <p>Orders Sent</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-stats-bars"></i>
+                <div class="box-footer no-padding">
+                  <ul class="nav nav-stacked">
+                    <li><a href="#">Company Name <span class="pull-right badge bg-blue">ABC Corporation.</span></a></li>
+                    <li><a href="#">Address <span class="pull-right badge bg-aqua">304, North Avenue, Main Rd, USA.</span></a></li>
+                    <li><a href="#">Country <span class="pull-right badge bg-green">USA</span></a></li>
+                    <li><a href="#">Entity Type <span class="pull-right badge bg-red">Type</span></a></li>
+					<li><a href="#">Company Code <span class="pull-right badge bg-blue">ABC005124</span></a></li>
+                    <li><a href="#">Bank Name <span class="pull-right badge bg-aqua">ICICI Bank</span></a></li>
+                    <li><a href="#">Bank Account No. <span class="pull-right badge bg-green">2515478562</span></a></li>
+                  </ul>
                 </div>
               </div>
-            </div><!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="small-box bg-yellow">
-                <div class="inner">
-                  <h3>20</h3>
-                  <p>Invoice Received</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-person-add"></i>
-                </div>
+			</div>
+			 <div class="col-md-8 col-sm-12 col-xs-12">
+            
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="info-box ">
+                <span class="info-box-icon bg-aqua"><i class="fa fa-bookmark-o"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Total Invoice Settled</span>
+                  <span class="info-box-number">41,410</span>
+                 
+                </div><!-- /.info-box-content -->
               </div>
-            </div><!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
-              <!-- small box -->
-              <div class="small-box bg-red">
-                <div class="inner">
-                  <h3>25</h3>
-                  <p>Invoice Sent</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-pie-graph"></i>
-                </div>
-              </div>
-            </div><!-- ./col -->
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-green"><i class="fa fa-files-o"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Invoice Settled Amount</span>
+                  <span class="info-box-number">$13,54,648</span>
+				  
+                </div><!-- /.info-box-content -->
+              </div><!-- /.info-box -->
+            </div>
+			<div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-red"><i class="fa fa-star-o"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Total Invoice Pending</span>
+                  <span class="info-box-number">93,139</span>
+				  
+                </div><!-- /.info-box-content -->
+              </div><!-- /.info-box -->
+            </div>
+			<div class="col-md-6 col-sm-6 col-xs-12">
+              <div class="info-box">
+                <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+                <div class="info-box-content">
+                  <span class="info-box-text">Invoice Pending Amount</span>
+                  <span class="info-box-number">$91,74,010</span>
+				
+                </div><!-- /.info-box-content -->
+              </div><!-- /.info-box -->
+            </div>
+			</div>
           </div><!-- /.row -->
           <!-- Main row -->
 		  
 		  <div class="sectionSeperator"></div>
 			
-			<div class="row">
-			<div class="col-md-3">
-				<div class="form-group col-md-12 gray_bg padding10">
-				  <label class="font150 fontNormal paddingTB10">Outstanding Exposure</label>
-				  <label class="lblvalue colorRed font200 paddingTB10">-$451,500.00</label>
-				</div>
-			</div>
-			<div class="col-md-9">
-			<div class="border5 overflowAuto paddingRL10">
-				<div class="subHeader">My Identity</div>
-				<div class="form-group col-md-3">
-				  <label>Organization</label>
-				  <label class="lblvalue">Parent Company</label>
-				</div>
-				<div class="form-group col-md-3">
-				  <label>User</label>
-				  <label class="lblvalue">Admin</label>
-				</div>
-				<div class="form-group col-md-3">
-				  <label>Country</label>
-				  <label class="lblvalue">US</label>
-				</div>
-				<div class="form-group col-md-3">
-				  <label>Locale</label>
-				  <label class="lblvalue">New York</label>
-				</div>
-				</div>
-			</div>
 			
-			</div>
+			</section>
+		</div>
 		  
 			<div class="sectionSeperator"></div>
+		<div class="container">
+			<section class="content">
 			<div class="row">
 			<div class="col-md-6">
 				<div class="subHeader">Party A: Order and Invoice Tables</div>
