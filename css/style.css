@@ -5657,12 +5657,12 @@ input[type=checkbox].form-control, input[type=radio].form-control {width:20px;he
 input[type=file].form-control {display: block; padding: 6px 0; width: auto; border: none;}
 .subHeader{padding:5px 0;margin-bottom:10px; border-bottom:1px dotted #474747;font-size:21px;font-weight:normal;color:#007ac3;}
 .text-bold{font-weight:bold;}
-.blue{color:#007ac3;}
+.blue{color:#33a4d8;}
 .panel-body a{font-weight:bold;}
 .panel-title a {font-size: 14px;}
 .panel-title a{background:#f6f6f6;}
 .subTitle{font-weight:bold;font-size:14px;margin:5px 0 15px;}
-.gray_bg{background:#f5f5f5;}
+.gray_bg{background:#f5f5f5;border: 1px solid #e1e1e1;}
 
 .lineContainer{border:1px solid #dadada; margin-bottom:10px;}
 .subTitle{color:#007ac3;}
@@ -5700,7 +5700,7 @@ input[type=checkbox], input[type=radio] {margin: 3px 4px 0;vertical-align:middle
     width: 400px;
     margin: 120px auto;
 }
-
+.small-box>.inner{text-align:center;}
 /*===== Login Page =====*/
 .login-page, .register-page {
     background: #d2d6de;
@@ -5782,3 +5782,40 @@ input[type=checkbox], input[type=radio] {margin: 3px 4px 0;vertical-align:middle
 			border: 1px dashed #CCC;
 			background: none;
 		}
+		
+/* ==== END =====*/
+
+.navbar-brand{font-size:26px;}
+
+.box h3{color:#fff;}
+.info-box .progress .progress-bar {
+    background: #707070 !important;
+}
+.profile .fa{color:#fff;}
+.info-box {border: 1px solid #f1f1f1;}
+.info-box-number{margin:15px 0;}
+#content {background:#f1f1f1;}
+		
+/* ===== Theme1 =====*/
+.theme1 .page-banner {
+    background: #313e4b;
+    margin-top: ;
+    border-bottom: 10px solid #ffce54;
+    padding: 15px 0;
+}
+.theme1 .navbar-default .navbar-nav > li > a:after {
+    background-color: #ffce54;
+}
+.theme1 .navbar-default .navbar-nav > li > a.active, .theme1 .navbar-default .navbar-nav > li:hover > a {
+    border-color: #313e4b;
+    background: #33a4d8;
+    color: #fff;
+}
+.theme1 #content .container {
+    width:1145px; padding:5px;
+}
+.theme1 #content {background:#f1f1f1;}
+.theme1 .bg-red.border-bottom{border-bottom: 10px solid #b33323;}
+.theme1 .bg-yellow.border-bottom{border-bottom: 10px solid #c57900;}
+.theme1 .bg-aqua.border-bottom{border-bottom: 10px solid #0292b5;}
+.theme1 .bg-green.border-bottom{border-bottom: 10px solid #007d44;}
