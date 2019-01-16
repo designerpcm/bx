@@ -3054,10 +3054,6 @@ ul.icons-list li i {
     max-width:100%;
 }
 
-.text-center {
-    margin-bottom: 35px;
-}
-
 #portfolio-list {
     list-style: none;
     margin: 0;
@@ -5794,8 +5790,36 @@ input[type=checkbox], input[type=radio] {margin: 3px 4px 0;vertical-align:middle
 .profile .fa{color:#fff;}
 .info-box {border: 1px solid #f1f1f1;}
 .info-box-number{margin:15px 0;}
-#content {background:#f1f1f1;}
+#content {background:#f1f1f1;min-height:400px;}
+.info-box-icon{width: 60px !important;
+    height: 60px !important;
+    margin: 15px;
+    border-radius: 35px !important;font-size: 35px !important;
+    line-height: 62px !important;}
 		
+.bg-dark-gray{background-color: #a5a5a5 !important;}
+.widget-user-2 .widget-user-username, .widget-user-2 .widget-user-desc {
+     margin-left: 0px !important;
+}
+.companyProfile a span{text-transform:uppercase;}
+.widget-user-2 .widget-user-username{font-size:30px;}
+hr{border-color:#ddd;}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar .nav>li>a>.label {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    text-align: center;
+    font-size: 9px;
+    padding: 2px 3px;
+    line-height: .9;
+}
+.navbar-nav>.user-menu>.dropdown-menu>li.user-header>p {
+color: rgba(10, 10, 10, 0.8) !important;}
+
 /* ===== Theme1 =====*/
 .theme1 .page-banner {
     background: #313e4b;
