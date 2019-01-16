@@ -77,16 +77,81 @@
               <!-- Start Contact Info -->
             </div>
             <div class="col-md-6">
-              <div class="dropdown pull-right">
-				  <span class="dropdown-toggle" data-toggle="dropdown">Admin User
-				  <span class="caret"></span></span>
-				  <ul class="dropdown-menu">
-					<li><a href="#">Profile</a></li>
-					<li><a href="#">My Account</a></li>
-					<li><a href="#">Help</a></li>
-					<li><a href="#">Logout</a></li>
-				  </ul>
-				</div>
+				<div class="navbar-custom-menu">
+            <ul class="nav navbar-nav pull-right">
+              <!-- Messages: style can be found in dropdown.less-->
+              
+              <li class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-warning">10</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 10 notifications</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-red"></i> 5 new members joined
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-light-blue"></i> You changed your username
+                        </a>
+                      </li>
+                    </ul><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                  </li>
+                  <li class="footer"><a href="#">View all</a></li>
+                </ul>
+              </li>
+              <!-- Tasks: style can be found in dropdown.less -->
+              
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="img/user8-128x128.jpg" class="user-image" alt="User Image">
+                  <span class="hidden-xs">Mark W</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header bg-gray">
+                    <img src="img/user8-128x128.jpg" class="img-circle" alt="User Image">
+                    <p>
+                      Mark W - Web Developer
+                      <small>Member since Nov. 2012</small>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
             </div>
           </div>
         </div>
@@ -174,19 +239,19 @@
             <div class="col-md-4 col-sm-12 col-xs-12">
 				<div class="box box-widget widget-user-2">
                 <!-- Add the bg color to the header using any of the bg-* classes -->
-                <div class="widget-user-header bg-yellow">
-                  <h3 class="widget-user-username">-$451,500.00</h3>
-                  <h5 class="widget-user-desc">Outstanding Exposure</h5>
+                <div class="widget-user-header bg-dark-gray text-center">
+                  <h3 class="widget-user-username">$451,500.00</h3>
+                  <h5 class="widget-user-desc">Account Balance</h5>
                 </div>
                 <div class="box-footer no-padding">
-                  <ul class="nav nav-stacked">
-                    <li><a href="#">Company Name <span class="pull-right badge bg-blue">ABC Corporation.</span></a></li>
-                    <li><a href="#">Address <span class="pull-right badge bg-aqua">304, North Avenue, Main Rd, USA.</span></a></li>
-                    <li><a href="#">Country <span class="pull-right badge bg-green">USA</span></a></li>
-                    <li><a href="#">Entity Type <span class="pull-right badge bg-red">Type</span></a></li>
-					<li><a href="#">Company Code <span class="pull-right badge bg-blue">ABC005124</span></a></li>
-                    <li><a href="#">Bank Name <span class="pull-right badge bg-aqua">ICICI Bank</span></a></li>
-                    <li><a href="#">Bank Account No. <span class="pull-right badge bg-green">2515478562</span></a></li>
+                  <ul class="nav nav-stacked companyProfile">
+                    <li><a href="#">Company Name <span class="pull-right ">ABC Corporation.</span></a></li>
+                    <li><a href="#">Address <span class="pull-right">304, North Avenue, Main Rd, USA.</span></a></li>
+                    <li><a href="#">Country <span class="pull-right ">USA</span></a></li>
+                    <li><a href="#">Entity Type <span class="pull-right">Type</span></a></li>
+					<li><a href="#">Company Code <span class="pull-right">ABC005124</span></a></li>
+                    <li><a href="#">Bank Name <span class="pull-right ">ICICI Bank</span></a></li>
+                    <li><a href="#">Bank Account No. <span class="pull-right ">2515478562</span></a></li>
                   </ul>
                 </div>
               </div>
@@ -225,7 +290,7 @@
             </div>
 			<div class="col-md-6 col-sm-6 col-xs-12">
               <div class="info-box">
-                <span class="info-box-icon bg-aqua"><i class="fa fa-envelope-o"></i></span>
+                <span class="info-box-icon bg-yellow"><i class="fa fa-envelope-o"></i></span>
                 <div class="info-box-content">
                   <span class="info-box-text">Invoice Pending Amount</span>
                   <span class="info-box-number">$91,74,010</span>
@@ -235,43 +300,11 @@
             </div>
 			</div>
           </div><!-- /.row -->
-          <!-- Main row -->
-		  
-		  <div class="sectionSeperator"></div>
-			
+          <!-- Main row -->		
 			
 			</section>
 		</div>
-		  
-			<div class="sectionSeperator"></div>
-		<div class="container">
-			<section class="content">
-			<div class="row">
-			<div class="col-md-6">
-				<div class="subHeader">Party A: Order and Invoice Tables</div>
-				<div class="paddingTB10">
-				<span class="legendsOrders"><span> </span> Orders</span>
-				<span class="legendsInvoice"><span> </span> Invoices</span>
-				 <a href="#" class="pull-right">More info </a>
-				</div>
-				<div id="chart1"> </div>
-			</div>
-			
-			<div class="col-md-6">
-			<div class="subHeader">Party B: Order and Invoice Tables</div>
-			<div class="paddingTB10">
-				<span class="legendsOrders"><span> </span> Orders</span>
-				<span class="legendsInvoice"><span> </span> Invoices</span>
-				<a href="#" class="pull-right">More info </a>
-				</div>
-				<div id="chart2"> </div>
-			</div>
-			</div>
-			
-			
-		  
-        </section>
-      </div>
+		
     </div>
     <!-- End content -->
 
