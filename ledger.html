@@ -31,6 +31,7 @@
   <!--  CSS Styles  -->
   <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="red" media="screen" />
   <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/AdminLTE.min.css" media="screen">
 
   <!-- Responsive CSS Styles  -->
   <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
@@ -75,19 +76,81 @@
               <!-- Start Contact Info -->
             </div>
             <div class="col-md-6">
-              <!-- Start Social Links -->
-              <ul class="social-list">
-				<li>
-                  <a href="#">My Account</a>
-                </li>
-                <li>
-                  <a href="#">Cart</a>
-                </li>
-                <li>
-                  <a href="#">Help</a>
-                </li>
-              </ul>
-              <!-- End Social Links -->
+				<div class="navbar-custom-menu">
+            <ul class="nav navbar-nav pull-right">
+              <!-- Messages: style can be found in dropdown.less-->
+              
+              <li class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-warning">10</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 10 notifications</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 200px;"><ul class="menu" style="overflow: hidden; width: 100%; height: 200px;">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-red"></i> 5 new members joined
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-light-blue"></i> You changed your username
+                        </a>
+                      </li>
+                    </ul><div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 3px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 3px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                  </li>
+                  <li class="footer"><a href="#">View all</a></li>
+                </ul>
+              </li>
+              <!-- Tasks: style can be found in dropdown.less -->
+              
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="img/user8-128x128.jpg" class="user-image" alt="User Image">
+                  <span class="hidden-xs">Mark W</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header bg-gray">
+                    <img src="img/user8-128x128.jpg" class="img-circle" alt="User Image">
+                    <p>
+                      Mark W - Web Developer
+                      <small>Member since Nov. 2012</small>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
             </div>
           </div>
         </div>
@@ -177,66 +240,63 @@
 		  <div class="marginT25"> </div>
 		  <div class="col-md-12">
 		  <div class="subHeader">General Ledger</div>
-		  <div class="col-md-12 gray_bg paddingTB10">
-				<div class="col-md-12">
-					<div class="col-md-2"><label >Date</label></div>
-					<div class="col-md-4"><label >Perticulars</label></div>
-					<div class="col-md-3"><label >Credit</label></div>
-					<div class="col-md-3"><label >Debit</label></div>
-				</div>
-				<div class="clearfix"> </div>
-		  <hr>
-				<div class="col-md-12 form-group">
-					<div class="col-md-2"><input type="date" class="form-control" placeholder="" name=""></div>
-					<div class="col-md-4"><label >Cash</label></div>
-					<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
-					<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
-				</div>
-				<div class="col-md-12 form-group">
-					<div class="col-md-2"><input type="date" class="form-control" placeholder="" name=""></div>
-					<div class="col-md-4"><label >Office Expenses</label></div>
-					<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
-					<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
-				</div>
-				<div class="col-md-12 form-group">
-					<div class="col-md-2"><input type="date" class="form-control" placeholder="" name=""></div>
-					<div class="col-md-4"><label >Deposite</label></div>
-					<div class="col-md-3"><select class="form-control" placeholder="" name="">
-					<option>Select</option>
-					<option>Option 1</option>
-					<option>Option 2</option>
-					</select></div>
-					<div class="col-md-3"><select class="form-control" placeholder="" name="">
-					<option>Select</option>
-					<option>Option 1</option>
-					<option>Option 2</option>
-					</select></div>
-				</div>
-				<div class="col-md-12 form-group">
-					<div class="col-md-2"><input type="date" class="form-control" placeholder="" name=""></div>
-					<div class="col-md-4"><label >Tax</label></div>
-					<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
-					<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
-				</div>
-				<div class="col-md-12 form-group">
-					<div class="col-md-2"><input type="date" class="form-control" placeholder="" name=""></div>
-					<div class="col-md-4"><label >Misc.</label></div>
-					<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
-					<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
-				</div>
-				<div class="clearfix"> </div>
-			<hr>
-			
-			
-			<div class="col-md-12">
-				<div class="clearfix"></div>
-				<div class="col-md-4 col-md-offset-2"><label >Net Total:</label></div>
-				<div class="col-md-3 form-group"><label >000.00</label></div>
-				<div class="col-md-3 form-group"><label >000.00</label></div>
-				<div class="clearfix"></div>
-			</div>
-			
-			</div>
+			<div class="table-responsive">          
+			  <table class="table">
+				<thead>
+				  <tr>
+					<th>Date
+					<th>Perticulars</th>
+					<th>References</th>
+					<th>Credit</th>
+					<th>Debit</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>05/12/18</td>
+					<td>KD Traders Bill</td>
+					<td>XYZ</td>
+					<td>35,000</td>
+					<td>19,250</td>
+				  </tr>
+				  <tr>
+					<td>05/12/18</td>
+					<td>KD Traders Bill</td>
+					<td>XYZ</td>
+					<td>35,000</td>
+					<td>19,250</td>
+				  </tr>
+				  <tr>
+					<td>05/12/18</td>
+					<td>KD Traders Bill</td>
+					<td>XYZ</td>
+					<td>35,000</td>
+					<td>19,250</td>
+				  </tr>
+				  <tr>
+					<td>05/12/18</td>
+					<td>KD Traders Bill</td>
+					<td>XYZ</td>
+					<td>35,000</td>
+					<td>19,250</td>
+				  </tr>
+				  <tr>
+					<td>05/12/18</td>
+					<td>KD Traders Bill</td>
+					<td>XYZ</td>
+					<td>35,000</td>
+					<td>19,250</td>
+				  </tr>
+				  <tr class="text-bold">
+					<td></td>
+					<td></td>
+					<td>Total</td>
+					<td>35,000</td>
+					<td>19,250</td>
+				  </tr>
+				</tbody>
+			  </table>
+			  </div>
 			</div>
 			<div class="col-md-12 marginT25 btnContainer text-right">
 			  <button type="button" class="btn btn-default">Delete</button>
