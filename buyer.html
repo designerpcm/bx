@@ -31,16 +31,14 @@
   <!--  CSS Styles  -->
   <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="red" media="screen" />
   <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
- <link rel="stylesheet" type="text/css" href="css/AdminLTE.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/AdminLTE.min.css" media="screen">
+
   <!-- Responsive CSS Styles  -->
   <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
-  <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
 
   <!--  JS  -->
   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="js/jquery.migrate.js"></script>
-  <script src="js/jquery.sortable.min.js"></script>
-  
   <script type="text/javascript" src="js/modernizrr.js"></script>
   <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery.fitvids.js"></script>
@@ -55,25 +53,9 @@
   <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
   <script type="text/javascript" src="js/jquery.parallax.js"></script>
   <script type="text/javascript" src="js/jquery.slicknav.js"></script>
-  <script type="text/javascript" src="js/jquery.multiselect.js"></script>
 
   <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-  <script>
-		jQuery(function() {
-			jQuery('.sortable').sortable();
-			jQuery('.handles').sortable({
-				handle: 'span'
-			});
-			jQuery('.connected').sortable({
-				connectWith: '.connected'
-			});
-			jQuery('.exclude').sortable({
-				items: ':not(.disabled)'
-			});
-		});
-	</script>
 
 </head>
 
@@ -86,7 +68,7 @@
     <div class="hidden-header"></div>
     <header class="clearfix">
 
-       <!-- Start Top Bar -->
+      <!-- Start Top Bar -->
       <div class="top-bar">
         <div class="container">
           <div class="row">
@@ -193,7 +175,7 @@
                 <a href="index.html">Home</a>
               </li>
 			  <li>
-                <a class="active" href="invoice.html">Invoice</a>
+                <a  href="invoice.html">Invoice</a>
 				<ul class="dropdown">
 				  <li><a class="active" href="invoice.html">Invoices</a></li>
                   <li><a class="active" href="create-invoice.html">Create Invoice</a></li>
@@ -207,8 +189,8 @@
                   <li><a class="active" href="company-info.html">Create Company</a></li>
                 </ul>
               </li>
-			  <li>
-                <a href="buyer.html">Buyer</a>
+			   <li >
+                <a class="active" href="buyer.html">Buyer</a>
               </li>
 			  <li>
                 <a href="transactions.html">Transactions</a>
@@ -236,12 +218,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h2>Create New Data Table View</h2>
+            <h2>Buyer</h2>
           </div>
           <div class="col-md-6">
             <ul class="breadcrumbs">
               <li><a href="#">Home</a></li>
-              <li>Create View</li>
+              <li>Buyer</li>
             </ul>
           </div>
         </div>
@@ -251,127 +233,59 @@
     <div id="content">
       <div class="container">
         <div class="page-content">
-
-
-          <div class="row">
-
-           
-			
-			<div class="col-md-12">
-				<div class="subHeader">General</div>
-				<div class="form-group col-md-3 paddingL0">
-				  <label >Name </label>
-				  <input type="text" class="form-control" placeholder="" name="">
-				</div>
-				<div class="form-group col-md-6 paddingR0">
-				  <label >Visibility</label><br>
-				  <label class="radio-inline">
-					  <input type="radio" name="optradio" checked>Only Me
-					</label>
-					<label class="radio-inline">
-					  <input type="radio" name="optradio">Everyone
-					</label>
-					<label class="radio-inline">
-					  <input type="radio" name="optradio">Restrict by content group
-					</label>
-				</div>
-				<div class="form-group col-md-3 paddingL0">
-				  <label >Start with view</label>
-				  <select class="form-control" placeholder="" name="">
-					<option>Select</option>
-					<option>Option 1</option>
-					<option>Option 2</option>
-				  </select>
-				</div>
-				
+		  <div class="col-md-12 row">
+		  <div class="subHeader">Buyer Details</div>
+			<div class="table-responsive">          
+			  <table class="table">
+				<thead>
+				  <tr>
+					<th>Buyer Code</th>
+					<th>Company Name</th>
+					<th>Address</th>
+					<th>Country</th>
+					<th>Currency</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>BUY0349</td>
+					<td>KD Traders</td>
+					<td>23, ABC Road</td>
+					<td>USA</td>
+					<td>USD[$]</td>
+				  </tr>
+				   <tr>
+					<td>BUY0349</td>
+					<td>KD Traders</td>
+					<td>23, ABC Road</td>
+					<td>USA</td>
+					<td>USD[$]</td>
+				  </tr>
+				   <tr>
+					<td>BUY0349</td>
+					<td>KD Traders</td>
+					<td>23, ABC Road</td>
+					<td>USA</td>
+					<td>USD[$]</td>
+				  </tr>
+				   <tr>
+					<td>BUY0349</td>
+					<td>KD Traders</td>
+					<td>23, ABC Road</td>
+					<td>USA</td>
+					<td>USD[$]</td>
+				  </tr>
+				   <tr>
+					<td>BUY0349</td>
+					<td>KD Traders</td>
+					<td>23, ABC Road</td>
+					<td>USA</td>
+					<td>USD[$]</td>
+				  </tr>
+				</tbody>
+			  </table>
+			  </div>
 			</div>
-		
-
-          </div>
-		  
-		  <div class="sectionSeperator"></div>
-		  <div class="subHeader">Conditions</div>
-		  <div class="col-md-12 gray_bg padding10">
-				<div class="col-md-3 paddingL0">
-				  <select class="form-control" placeholder="" name="">
-					<option>Match All Conditions</option>
-					<option>Match at lease one condition</option>
-				  </select>
-				</div>
-				<!-- <div class="pull-right"><a href="#" class="btn btn-primary">Add group of Conditions</a></div> -->
-			</div>
-			<div class="conditionsGroupContainer">
-			<div class="col-md-12 padding10 conditionsGroup">
-				<div class="col-md-2"> </div>
-				<div class="col-md-2 paddingL0">
-				  <select class="form-control" placeholder="" name="">
-					<option>Invoice #</option>
-					<option>Option 2</option>
-				  </select>
-				</div>
-				<div class="col-md-2 paddingL0">
-				  <select class="form-control" placeholder="" name="">
-					<option>Is</option>
-					<option>Contains</option>
-				  </select>
-				</div>
-				<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
-				<div class="col-md-1"></div>
-			</div>
-			<div class="col-md-12 padding10 conditionsGroup">
-				<div class="col-md-2"><select class="form-control" placeholder="" name="">
-					<option>And</option>
-					<option>Or</option>
-				  </select> </div>
-				<div class="col-md-2 paddingL0">
-				  <select class="form-control" placeholder="" name="">
-					<option>Invoice #</option>
-					<option>Option 2</option>
-				  </select>
-				</div>
-				<div class="col-md-2 paddingL0">
-				  <select class="form-control" placeholder="" name="">
-					<option>Is</option>
-					<option>Contains</option>
-				  </select>
-				</div>
-				<div class="col-md-3"><input type="text" class="form-control" placeholder="" name=""></div>
-				<div class="col-md-1"><i class="fa fa-plus-circle"> </i> | <i class="fa fa-trash"> </i></div>
-			</div>
-			</div>
-			<div class="clearfix"> </div>
-		  
-		  <div class="sectionSeperator"></div>
-		  <div class="subHeader">Columns</div>
-		  <p>Drag columns to the right to select, to the left to unselect and vertically to change column order</p>
-		  <div class="col-md-12">
-				<section id="connected">
-					<div class="col-md-2">
-					<div class="text-bold">Available Columns</div>
-					<ul class="connected list gray_bg">
-						<li>Channel</li>
-						<li>Chart Of Accounts</li>
-						<li>Invoice #</li>
-						<li>Supplier</li>
-						<li>Net Due Date</li>
-						<li>Total</li>
-						<li>Supplier Total</li>
-						<li>Shipping Amount</li>
-						<li>Payment Term</li>
-					</ul>
-					</div>
-					<div class="col-md-2">
-					<div class="text-bold">Selected Columns</div>
-					<ul class="connected list selected gray_bg">
-						<li class="highlight">Status</li>
-						<li class="highlight">Delivery Method</li>
-						<li class="highlight">Actions</li>
-
-					</ul>
-					</div>
-				</section>
-			</div>
-		  
 			<div class="col-md-12 marginT25 btnContainer text-right">
 			  <button type="button" class="btn btn-default">Delete</button>
 			  <button type="button" class="btn btn-default">Calculate</button>
@@ -412,13 +326,13 @@
 
   <script type="text/javascript" src="js/script.js"></script>
   
-  <script>
+   <script>
 	$(document).ready(function(){
-    $(".fa-plus-circle").click(function(){
-        $(this).parents(".conditionsGroup").clone().appendTo($(this).parents(".conditionsGroupContainer"));
+    $(".addLine").click(function(){
+		$('.addedLine:last-child').clone().appendTo(".linesContainer table .results");
     });
-	$(".fa-trash").click(function(){ alert(1);
-        $(this).parents(".conditionsGroup").remove();
+	$('.linesContainer').find(".fa-trash-o").click(function(){ alert(2);
+        $(this).closest(".addedLine").remove();
 	});
 });
   </script>
