@@ -172,7 +172,8 @@ strong {
 
 #items table tr th {
     border-right: solid grey 1px;
-    padding: 3px;
+    padding: 3px;text-transform: uppercase;
+    white-space: nowrap;
 }
 
 #items table tr:nth-child(2) > td {
@@ -250,6 +251,10 @@ td.label{width:120px;}
 .border {border:1px solid gray;}
 .innerContainer{padding:5px;}
 .innerContainer div{margin:5px 0;}
+table.invoiceDetails tr td:nth-child(2){width:50%;}
+table.invoiceDetails tr td{width:10%;text-align:center;}
+.text-bold{font-weight:bold; font-size:13px;}
+table.text-center{text-align:center !important;}
 </style><div id="container"><div id="header"><div id="logo"><img src="img/logo.jpg" alt="">
 </div>
 <div id="reference"><h3><strong>Invoice</strong></h3>
@@ -288,9 +293,9 @@ td.label{width:120px;}
 </td>
 </tr>
 </table>
-
+<br>
 	<div id="items"><!-- <p>Amounts expressed in Euros</p> -->
-	<table >
+	<table class="invoiceDetails">
 		<tr><th>Line</th><th>Description</th><th>Sub Total before Tax</th><th>Tax</th><th>Notes</th><th>Tax Amount</th><th>Line Amount</th></tr>
 		<tr><td>1</td><td>Description</td><td>2,500.00</td><td>12%</td><td>Notes</td><td>2400.00</td><td>400.00</td></tr>
 		<tr><td>2</td><td>Description</td><td>2,500.00</td><td>12%</td><td>Notes</td><td>2400.00</td><td>400.00</td></tr>
@@ -310,14 +315,24 @@ td.label{width:120px;}
 		<tr><td><td><td></td><td></td><td></td><td></td><td></td></tr>
 		<tr><td><td><td></td><td></td><td></td><td></td><td></td></tr>
 		<tr><td><td><td></td><td></td><td></td><td></td><td></td></tr>
-		<tr><td><td><td></td><td></td><td></td><td></td><td></td></tr>
+		<tr class="border text-bold"><td colspan="2" rowspan="2">Invoice Total</td><td>12,500.00</td><td></td><td></td><td>12,100.00</td><td>2,000.00</td></tr>
+		<tr><td colspan="5">All Amounts shown are in USD (US Doller)</td></tr>
+	</table>
+	<br>
+	<table>
+		<tr class="border"><td style="background:#dadada;width:100px">Notes </td> <td> </td> </tr>
+	</table>
+	<br><br><br>
+	<table class="text-center">
+		<tr class="border"><td style="background:#dadada;width:100px">Invoice Number </td> <td>AMSUK325652 </td> <td style="background:#dadada;width:100px">Page Number </td> <td>1</td>
+		<td>This is last page of Invoice</td></tr>
 	</table>
 	
 	
     <!-- <table><tr><th>Description</th><th>VAT</th><th>U.P</th><th>Qt</th><th>Total exc. VAT</th><tr><td>Apple - Macbook Pro</td><td>19.60%</td><td>952.09</td><td>3</td><td>2856.27</td></tr><tr><td>Github licence</td><td>10.00%</td><td>79.00</td><td>1</td><td>79.00</td></tr><tr><td>Apple care 1 year</td><td>20.00%</td><td>100.00</td><td>3</td><td>300.00</td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></tr></table> -->
 	</div>
 	
-	<div id="summary"><div id="note"><h4>Note :</h4><p></p></div><div id="total"><table border="1"><tr><td>Total exc. VAT</td><td>3235.27</td></tr><tr><td>Total VAT</td><td>627.73</td></tr><tr><td>Total inc. VAT</td><td>3863.00</td></tr></table></div></div>
+	<div id="summary"><!-- <div id="note"><h4>Note :</h4><p></p></div><div id="total"><table border="1"><tr><td>Total exc. VAT</td><td>3235.27</td></tr><tr><td>Total VAT</td><td>627.73</td></tr><tr><td>Total inc. VAT</td><td>3863.00</td></tr></table></div> --></div>
 	</div>
 	<div id="footer"><p>Biller Xchange - Registration: 87564738493127 <br> NAF-APE: 6202A - Num. VAT: EN28987856541</p></div>
 	</body></html>
