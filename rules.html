@@ -1,0 +1,854 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html lang="en">
+
+<head>
+
+  <!-- Basic -->
+  <title>Biller XChange</title>
+
+  <!-- Define Charset -->
+  <meta charset="utf-8">
+
+  <!-- Responsive etatag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Page Description and Author -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <!-- Bootstrap CSS  -->
+  <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" media="screen">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+
+  <!-- Slicknav -->
+  <link rel="stylesheet" type="text/css" href="css/slicknav.css" media="screen">
+
+  <!--  CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="red" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/AdminLTE.min.css" media="screen">
+
+  <!-- Responsive CSS Styles  -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+
+  <!--  JS  -->
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/jquery.migrate.js"></script>
+  <script type="text/javascript" src="js/modernizrr.js"></script>
+  <script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+  <script type="text/javascript" src="js/jquery.appear.js"></script>
+  <script type="text/javascript" src="js/count-to.js"></script>
+  <script type="text/javascript" src="js/jquery.textillate.js"></script>
+  <script type="text/javascript" src="js/jquery.lettering.js"></script>
+  <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+  <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax.js"></script>
+  <script type="text/javascript" src="js/jquery.slicknav.js"></script>
+
+  <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Container -->
+  <div id="container">
+
+    <!-- Start Header -->
+    <div class="hidden-header"></div>
+    <header class="clearfix">
+
+      <div class="navbar navbar-default navbar-top">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- Stat Toggle Nav Link For Mobiles -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+            <!-- End Toggle Nav Link For Mobiles -->
+            <a class="navbar-brand text-bold " href="index.html"><img src="img/BXLogo.png"></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Start Navigation List -->
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+			  <li>
+                <a  href="invoice.html">Invoice</a>
+				<!-- <ul class="dropdown">
+				  <li><a class="active" href="invoice.html">Invoices</a></li>
+                  <li><a class="active" href="create-invoice.html">Create Invoice</a></li>
+				  <li><a class="active" href="bulk-load-invoice.html">Bulk Load Invoice</a></li>
+                </ul> -->
+              </li>
+			  <li>
+                <a href="company-list.html">Company</a>
+				<!-- <ul class="dropdown">
+				  <li><a class="active" href="company-list.html">Company List</a></li>
+                  <li><a class="active" href="company-info.html">Create Company</a></li>
+                </ul> -->
+              </li>
+			   <li >
+                <a href="buyer.html">Buyer</a>
+              </li>
+			  <li>
+                <a href="transactions.html">Transactions</a>
+				<!-- <ul class="dropdown">
+				  <li><a href="transactions.html">Transactions</a></li>
+                  <li><a href="ledger.html">Ledger</a></li>
+                </ul> -->
+              </li>
+			  <li>
+                <a href="settlement.html">Settlement</a>
+              </li>
+			  <li>
+                <a class="active" href="setup.html">Setup</a>
+              </li>
+			  <li class="user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img src="img/user.png" class="user-image" alt="User Image">
+                  
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img src="img/user.png" class="img-circle" alt="User Image">
+                    <p>
+                      John Doe
+                      <small>CEO, ABC Company</small>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat btn-sm">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- End Navigation List -->
+          </div>
+        </div>
+
+      </div>
+
+    </header>
+
+    
+
+    <div id="content" class="">
+      <div class="container">
+		<div class="nav-tabs-custom">
+			<ul class="nav nav-tabs">
+			  <li class=""><a href="setup.html" >Master Data</a></li>
+			  <li class="active"><a href="rules.html" >Rules</a></li>
+			  <li class=""><a href="documents-upload.html" >Documents Upload</a></li>
+			</ul>
+		</div>
+        <div class="page-content tab-content">
+			<div class="tab-pane active" id="rules" >
+			<div class="row">
+				<div class="subHeader">Rules</div>
+					
+					<div class="bgLightBlue overflowAuto">
+					<div class="form-group form-horizontal">
+                      <label class="col-sm-2 control-label text-left" style="text-align:left;">Select Rules Type: </label>
+                      <div class="col-sm-3">
+                        <select class="form-control" id="selectRulesOption">
+							<option>Entity Related Rules</option>
+							<option>VAT Related Rules</option>
+							<option>TP Related Rules</option>
+							<option>WHT Related Rules</option>
+							<option>Routing Rules</option>
+							<option>Invoice Format Rules</option>
+							<option>Consumption Related Rules</option>
+							<option value="allocationRelatedRules">Allocation Related Rules</option>
+							<option>Memo Rules</option>
+							<option value="userAccessRules">Use Access Rules</option>
+							<option value="nettingSettlementRules">Netting & Settlement Rules</option>
+						</select>
+                      </div>
+					  <label class="col-sm-2 control-label text-left" >Add Rules Type: </label>
+                      <div class="col-sm-3">
+                        <input type="text" class="form-control" />
+                      </div>
+					  <div class="col-sm-1">
+						<button type="button" class="btn btn-primary"><i class="fa fa-plus-circle"> </i> Add</button> 
+					  </div>
+                    </div>
+					<div class="clearfix mSeperator"> </div>
+					
+					<div class="rulesDataContainer otherRulesContainer active">
+					<div class="panel-group" id="accordion1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						  <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#addOtherRule" aria-expanded="false" class="">
+									<i class="fa fa-angle-down control-icon"></i>
+									<i class="fa fa-plus"></i> Add Rule Manager
+								</a>
+							</h4>
+						</div>
+						<div id="addOtherRule" class="panel-collapse collapse" aria-expanded="false">
+						  <div class="panel-body">
+							
+							<div class="clearfix mSeperator"> </div>
+							<div class="row rulesContainer">
+								<div class="form-group col-md-4">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="">
+									<option>Rules</option>
+									<option selected>Direct Billing Allowed</option>
+									<option>VAT Regime</option>
+									<option>Part of EU</option>
+									<option>Invoice Decimals</option>
+									<option>Country Federal for Tax</option>
+									<option>Counsumption Rule</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+								  </select>
+								</div>
+								
+								<div class="form-group col-md-3 radioOption">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="" id="ruleOptions">
+									<option value="options" selected>Options (Yes/No)</option>
+									<option value="numbers">Numbers</option>
+									<option value="numbers">Percentage</option>
+								  </select>
+								</div>
+								<div class="form-group col-md-3">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control ruleOption" placeholder="" name="">
+									<option>Options</option>
+									<option selected>Yes</option>
+									<option>No</option>
+								  </select>
+								  <input type="text" class="form-control ruleText" placeholder="" name="" style="display:none;">
+								</div>
+								<div class="form-group col-md-2">
+								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
+								</div>
+							</div>							
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="subTitle">Rules List</div>
+					<div class="clearfix"> </div>
+						<div class="table-responsive">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Sr. No.</th>
+								<th>Rules Type</th>
+								<th>Rules Value</th>
+								<th>Actions</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>1</td>
+								<td>Direct Billing Allowed</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>2</td>
+								<td>VAT Regime</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>3</td>
+								<td>Part of EU</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>4</td>
+								<td>Invoice Decimals</td>
+								<td>2</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>5</td>
+								<td>Country Federal for Tax</td>
+								<td>NA</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  
+							</tbody>
+						  </table>
+						  </div>
+					</div>
+					
+					<div class="rulesDataContainer userAccessRulesContainer">
+					<div class="panel-group" id="accordion1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						  <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#addUserAccessRule" aria-expanded="false" class="">
+									<i class="fa fa-angle-down control-icon"></i>
+									<i class="fa fa-plus"></i> Add Rule Manager
+								</a>
+							</h4>
+						</div>
+						<div id="addUserAccessRule" class="panel-collapse collapse" aria-expanded="false">
+						  <div class="panel-body">
+							<div class="clearfix mSeperator"> </div>
+							<div class="row rulesContainer">
+								<div class="form-group col-md-4 ">
+									<label>User Roles</label>
+									<div>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value="">View Only
+									</label>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value="">Admin
+									</label>
+									<label class="checkbox-inline">
+									  <input type="checkbox" value="">Settlement
+									</label>
+									</div>
+								</div>
+								
+								<div class="form-group col-md-2 pull-right inline accBtnContainer ">
+								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
+								</div>
+							</div>							
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="subTitle">Rules List</div>
+					<div class="clearfix"> </div>
+						<div class="table-responsive">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Sr. No.</th>
+								<th>User Roles</th>
+								<th>Access</th>
+								<th>Actions</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>1</td>
+								<td>View Only</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>2</td>
+								<td>Admin</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>3</td>
+								<td>Settlement</td>
+								<td>No</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  
+							</tbody>
+						  </table>
+						  </div>
+					</div>
+					
+					<div class="rulesDataContainer nettingSettlementContainer">
+					<div class="panel-group" id="accordion1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						  <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#nettingSettlementRule" aria-expanded="false" class="">
+									<i class="fa fa-angle-down control-icon"></i>
+									<i class="fa fa-plus"></i> Add Rule Manager
+								</a>
+							</h4>
+						</div>
+						<div id="nettingSettlementRule" class="panel-collapse collapse" aria-expanded="false">
+						  <div class="panel-body">
+							<div class="clearfix mSeperator"> </div>
+							<div class="row rulesContainer">
+								<div class="form-group col-md-3 ">
+								  <label>Netting & Settlement Sub Rules</label>
+								  <select class="form-control" placeholder="" name="" id="selectNandSRules">
+									<option>Select</option>
+									<option selected="">Restricted Country</option>
+									<option>Regulated Country</option>
+									<option value="nettingType">Netting Type</option>
+								  </select>
+								</div>
+								<div class="form-group col-md-3 ">
+								  <label>Country</label>
+								  <select class="form-control" placeholder="" name="">
+									<option>Select</option>
+									<option selected="">India</option>
+									<option>USA</option>
+								  </select>
+								</div>
+								<div class="form-group col-md-3 nettingType">
+								  <label>Netting Type</label>
+								  <select class="form-control" placeholder="" name="">
+									<option>Select</option>
+									<option selected="">Type 1</option>
+									<option>Type 2</option>
+								  </select>
+								</div>
+								
+								<div class="form-group col-md-2 pull-right inline accBtnContainer ">
+								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
+								</div>
+							</div>							
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="subTitle">Rules List</div>
+					<div class="clearfix"> </div>
+						<div class="table-responsive">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Sr. No.</th>
+								<th>Country</th>
+								<th>Netting & Settlement Sub Rules</th>
+								<th>Netting Type</th>
+								<th>Actions</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>1</td>
+								<td>India</td>
+								<td>Restricted</td>
+								<td>Netting Type</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>2</td>
+								<td>USA</td>
+								<td>Regulated</td>
+								<td>Netting Type</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>3</td>
+								<td>Canada</td>
+								<td>No</td>
+								<td>Netting Type</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  
+							</tbody>
+						  </table>
+						  </div>
+					</div>
+					
+					<div class="rulesDataContainer allocationRelatedRulesContainer">
+					<div class="panel-group" id="accordion1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						  <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#allocationRelatedRules" aria-expanded="false" class="">
+									<i class="fa fa-angle-down control-icon"></i>
+									<i class="fa fa-plus"></i> Add Rule Manager
+								</a>
+							</h4>
+						</div>
+						<div id="allocationRelatedRules" class="panel-collapse collapse" aria-expanded="false">
+						  <div class="panel-body">
+							<div class="clearfix mSeperator"> </div>
+							<div class="rulesContainer">
+								<div class="row">
+								<div class="form-group col-md-3 ">
+								  <label>Divide Based on</label>
+								  <select class="form-control" placeholder="" name="" id="">
+									<option>Select</option>
+									<option selected="">Bug ID</option>
+									<option>Cost Center</option>
+								  </select>
+								</div>
+								<div class="form-group col-md-3 ">
+								  <label>Service Code</label>
+								  <select class="form-control" placeholder="" name="">
+									<option>Select</option>
+									<option selected="">Service Code 1</option>
+									<option>Service Code 2</option>
+								  </select>
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="form-group col-md-3 ">
+								  <label>Bug ID</label>
+								  <input type="text" class="form-control" />
+								</div>
+								<div class="form-group col-md-3 ">
+									<label>Percentage</label>
+								  <input type="text" class="form-control" />
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="form-group col-md-3 ">
+								  <input type="text" class="form-control" />
+								</div>
+								<div class="form-group col-md-3 ">
+								  <input type="text" class="form-control" />
+								</div>
+								</div>
+								
+								<div class="row">
+								<div class="form-group col-md-3 ">
+								  <input type="text" class="form-control" />
+								</div>
+								<div class="form-group col-md-3 ">
+								  <input type="text" class="form-control" />
+								</div>
+								<div class="form-group col-md-2 pull-right accBtnContainer ">
+								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
+								</div>
+								</div>
+								
+								
+								
+								
+							</div>							
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="subTitle">Rules List</div>
+					<div class="clearfix"> </div>
+						
+						<div class="tab-pane active" id="account-entries">
+			<div class="row invoicesContainer">
+			<div class="clearfix"> </div>
+			<div class="bgLightBlue">
+			<div class="table-responsive">          
+			  <table class="table">
+				<thead>
+				  <tr>
+					<th>Service Code</th>
+					<th>Entity ID</th>
+					<th>Country</th>
+					<th>Based On</th>
+					<th>Actions</th>
+				  </tr>
+				</thead>
+			  </table>
+			  </div>
+			<div class="clearfix"> </div>
+			<div class="panel-group companyList" id="accordion">
+				  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+										
+								<div class="table-responsive">          
+							  <table class="table">
+								<tbody>
+								  <tr>
+									<td><a data-toggle="collapse" data-parent="#accordion" href="#allocationRelatedRules1" aria-expanded="false" class="collapsed">Service Code 1 </a></td>
+									<td>21254</td>
+									<td>USA</td>
+									<td>Bug ID</td>
+									<td><i class="fa fa-edit" title="Edit"> </i></td>
+								  </tr>
+							  </tbody></table>
+							  </div>
+						</h4>
+                    </div>
+					<div class="clearfix"> </div>
+                    <div id="allocationRelatedRules1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                      <div class="panel-body">
+					  
+					  <div class="subTitle">Allocation Rules</div>
+						<div class="table-responsive ">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Code</th>
+								<th>Percentage</th>
+							  </tr>
+							</thead>
+							<tbody class="results">
+							  <tr class="">
+								<td>1</td>
+								<td>30</td>
+							  </tr>
+							  <tr class="">
+								<td>1</td>
+								<td>40</td>
+							  </tr>
+							   <tr class="">
+								<td>1</td>
+								<td>30</td>
+							  </tr>
+							</tbody>
+						  </table>
+						  </div>
+					  </div>
+                    </div>
+                  </div>
+			</div>
+			
+			<div class="panel-group companyList" id="accordion">
+				  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+										
+								<div class="table-responsive">          
+							  <table class="table">
+								<tbody>
+								  <tr>
+									<td><a data-toggle="collapse" data-parent="#accordion" href="#allocationRelatedRules2" aria-expanded="false" class="collapsed">Service Code 2 </a></td>
+									<td>21254</td>
+									<td>USA</td>
+									<td>Bug ID</td>
+									<td><i class="fa fa-edit" title="Edit"> </i></td>
+								  </tr>
+							  </tbody></table>
+							  </div>
+						</h4>
+                    </div>
+					<div class="clearfix"> </div>
+                    <div id="allocationRelatedRules2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                      <div class="panel-body">
+					  
+					  <div class="subTitle">Allocation Rules</div>
+						<div class="table-responsive ">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Code</th>
+								<th>Percentage</th>
+							  </tr>
+							</thead>
+							<tbody class="results">
+							  <tr class="">
+								<td>1</td>
+								<td>30</td>
+							  </tr>
+							  <tr class="">
+								<td>1</td>
+								<td>40</td>
+							  </tr>
+							   <tr class="">
+								<td>1</td>
+								<td>30</td>
+							  </tr>
+							</tbody>
+						  </table>
+						  </div>
+					  </div>
+                    </div>
+                  </div>
+			</div>
+			
+			
+			
+			</div>
+			
+            
+           
+          </div>
+		 </div>
+						
+					</div>
+					
+					</div>
+			</div>
+				
+			</div>
+			
+			</div>
+			<!-- <div class="row marginT25 btnContainer text-right">
+			 <button type="button" class="btn btn-default"> <i class="fa fa-times-circle"> </i> Cancel</button>
+			  <button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Submit</button>       
+			</div> -->
+			
+		  </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End content -->
+
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <!-- Start Copyright -->
+        <div class="copyright-section">
+          <div class="row">
+            <div class="col-md-12 col-xs-12">
+              <p>&copy; 2018 Biller XChange - All Rights Reserved</p>
+            </div>
+          </div>
+        </div>
+        <!-- End Copyright -->
+
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+  </div>
+  <!-- End Container -->
+
+  <!-- Go To Top Link -->
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <script type="text/javascript" src="js/script.js"></script>
+  
+   <script>
+	$(document).ready(function(){
+    $(".addLine").click(function(){
+		$('.addedLine:last-child').clone().appendTo(".linesContainer table .results");
+    });
+	$('.linesContainer').find(".fa-trash-o").click(function(){ alert(2);
+        $(this).closest(".addedLine").remove();
+	});
+	
+	jQuery('#ruleOptions').on('change', function() {
+	  if ( this.value == 'numbers')
+	  {
+		jQuery(".ruleText").show();
+		jQuery(".ruleOption").hide();
+	  }
+	  if ( this.value == 'options')
+	  {
+		jQuery(".ruleText").hide();
+		jQuery(".ruleOption").show();
+	  }
+	});
+	
+	jQuery('#masterDataOptions').on('change', function() {
+	  if ( this.value == 'legalEntity')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".legalEntityContainer").addClass('active');
+	  }
+	  if ( this.value == 'glAccounts')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".glAccountsContainer").addClass('active');
+	  }
+	  if ( this.value == 'costCenter')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".costCenterContainer").addClass('active');
+	  }
+	  if ( this.value == 'country')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".countryContainer").addClass('active');
+	  }
+	  if ( this.value == 'services')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".servicesContainer").addClass('active');
+	  }
+	  if ( this.value == 'products')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".productsContainer").addClass('active');
+	  }
+	  if ( this.value == 'metrics')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".metricsContainer").addClass('active');
+	  }
+	  if ( this.value == 'pl')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".plContainer").addClass('active');
+	  }
+	  if ( this.value == 'buc')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".bucContainer").addClass('active');
+	  }
+	  if ( this.value == 'accountingPeriod')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".accountPeriodContainer").addClass('active');
+	  }
+	  if ( this.value == 'bank')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".bankContainer").addClass('active');
+	  }
+	  if ( this.value == 'users')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".usersContainer").addClass('active');
+	  }
+	  if ( this.value == 'userRoles')
+	  {
+		jQuery(".masterDataContainer").removeClass('active');
+		jQuery(".userRolesContainer").addClass('active');
+	  }
+	  
+	});
+	
+	jQuery('#selectRulesOption').on('change', function() {
+	  if ( this.value == 'userAccessRules')
+	  {
+		jQuery(".otherRulesContainer").removeClass('active');
+		jQuery(".userAccessRulesContainer").addClass('active');
+	  } else{
+		jQuery(".userAccessRulesContainer").removeClass('active');
+		jQuery(".otherRulesContainer").addClass('active');
+	  }
+	  if ( this.value == 'nettingSettlementRules')
+	  {
+		jQuery(".otherRulesContainer").removeClass('active');
+		jQuery(".nettingSettlementContainer").addClass('active');
+	  }
+	  if ( this.value == 'allocationRelatedRules')
+	  {
+		jQuery(".otherRulesContainer").removeClass('active');
+		jQuery(".allocationRelatedRulesContainer").addClass('active');
+	  }
+	  
+	  
+	});
+	
+	jQuery('#selectNandSRules').on('change', function() {
+	  if ( this.value == 'nettingType')
+	  {
+		jQuery(".nettingType").addClass('active');
+	  } else { jQuery(".nettingType").removeClass('active'); }
+	});	  
+	
+	
+});
+  </script>
+
+</body>
+
+</html>
