@@ -168,15 +168,15 @@
                       <label class="col-sm-2 control-label text-left" style="text-align:left;">Select Rules Type: </label>
                       <div class="col-sm-3">
                         <select class="form-control" id="selectRulesOption">
-							<option>Entity Related Rules</option>
-							<option>VAT Related Rules</option>
-							<option>TP Related Rules</option>
-							<option>WHT Related Rules</option>
-							<option>Routing Rules</option>
-							<option>Invoice Format Rules</option>
-							<option>Consumption Related Rules</option>
+							<option value="entityRelatedRules">Entity Related Rules</option>
+							<option value="vatRelatedRules">VAT Related Rules</option>
+							<option value="tpRelatedRules">TP Related Rules</option>
+							<option value="whtRelatedRules">WHT Related Rules</option>
+							<option value="routingRules">Routing Rules</option>
+							<option value="invoiceFormatRules">Invoice Format Rules</option>
+							<option value="consumptionRelatedRules">Consumption Related Rules</option>
 							<option value="allocationRelatedRules">Allocation Related Rules</option>
-							<option>Memo Rules</option>
+							<option value="memoRules">Memo Rules</option>
 							<option value="userAccessRules">Use Access Rules</option>
 							<option value="nettingSettlementRules">Netting & Settlement Rules</option>
 						</select>
@@ -191,18 +191,781 @@
                     </div>
 					<div class="clearfix mSeperator"> </div>
 					
-					<div class="rulesDataContainer otherRulesContainer active">
+					<div class="rulesDataContainer entityRelatedRulesContainer active">
 					<div class="panel-group" id="accordion1">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 						  <h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#addOtherRule" aria-expanded="false" class="">
+							<a data-toggle="collapse" data-parent="#accordion" href="#entityRelatedRules" aria-expanded="false" class="">
 									<i class="fa fa-angle-down control-icon"></i>
 									<i class="fa fa-plus"></i> Add Rule Manager
 								</a>
 							</h4>
 						</div>
-						<div id="addOtherRule" class="panel-collapse collapse" aria-expanded="false">
+						<div id="entityRelatedRules" class="panel-collapse collapse" aria-expanded="false">
+						  <div class="panel-body">
+							
+							<div class="clearfix mSeperator"> </div>
+							<div class="row rulesContainer">
+								<div class="form-group col-md-4">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="">
+									<option>Rules</option>
+									<option selected>Direct Billing Allowed</option>
+									<option>VAT Regime</option>
+									<option>Part of EU</option>
+									<option>Invoice Decimals</option>
+									<option>Country Federal for Tax</option>
+									<option>Counsumption Rule</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+								  </select>
+								</div>
+								
+								<div class="form-group col-md-3 radioOption">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="" id="ruleOptions">
+									<option value="options" selected>Options (Yes/No)</option>
+									<option value="numbers">Numbers</option>
+									<option value="numbers">Percentage</option>
+								  </select>
+								</div>
+								<div class="form-group col-md-3">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control ruleOption" placeholder="" name="">
+									<option>Options</option>
+									<option selected>Yes</option>
+									<option>No</option>
+								  </select>
+								  <input type="text" class="form-control ruleText" placeholder="" name="" style="display:none;">
+								</div>
+								<div class="form-group col-md-2">
+								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
+								</div>
+							</div>							
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="subTitle">Rules List</div>
+					<div class="clearfix"> </div>
+						<div class="table-responsive">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Sr. No.</th>
+								<th>Rules Type</th>
+								<th>Rules Value</th>
+								<th>Actions</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>1</td>
+								<td>Direct Billing Allowed</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>2</td>
+								<td>VAT Regime</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>3</td>
+								<td>Part of EU</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>4</td>
+								<td>Invoice Decimals</td>
+								<td>2</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>5</td>
+								<td>Country Federal for Tax</td>
+								<td>NA</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  
+							</tbody>
+						  </table>
+						  </div>
+					</div>
+					
+					<div class="rulesDataContainer vatRelatedRulesContainer">
+					<div class="panel-group" id="accordion1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						  <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#vatRelatedRules" aria-expanded="false" class="">
+									<i class="fa fa-angle-down control-icon"></i>
+									<i class="fa fa-plus"></i> Add Rule Manager
+								</a>
+							</h4>
+						</div>
+						<div id="vatRelatedRules" class="panel-collapse collapse" aria-expanded="false">
+						  <div class="panel-body">
+							
+							<div class="clearfix mSeperator"> </div>
+							<div class="row rulesContainer">
+								<div class="form-group col-md-4">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="">
+									<option>Rules</option>
+									<option selected>Direct Billing Allowed</option>
+									<option>VAT Regime</option>
+									<option>Part of EU</option>
+									<option>Invoice Decimals</option>
+									<option>Country Federal for Tax</option>
+									<option>Counsumption Rule</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+								  </select>
+								</div>
+								
+								<div class="form-group col-md-3 radioOption">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="" id="ruleOptions">
+									<option value="options" selected>Options (Yes/No)</option>
+									<option value="numbers">Numbers</option>
+									<option value="numbers">Percentage</option>
+								  </select>
+								</div>
+								<div class="form-group col-md-3">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control ruleOption" placeholder="" name="">
+									<option>Options</option>
+									<option selected>Yes</option>
+									<option>No</option>
+								  </select>
+								  <input type="text" class="form-control ruleText" placeholder="" name="" style="display:none;">
+								</div>
+								<div class="form-group col-md-2">
+								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
+								</div>
+							</div>							
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="subTitle">Rules List</div>
+					<div class="clearfix"> </div>
+						<div class="table-responsive">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Sr. No.</th>
+								<th>Rules Type</th>
+								<th>Rules Value</th>
+								<th>Actions</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>1</td>
+								<td>Direct Billing Allowed</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>2</td>
+								<td>VAT Regime</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>3</td>
+								<td>Part of EU</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>4</td>
+								<td>Invoice Decimals</td>
+								<td>2</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>5</td>
+								<td>Country Federal for Tax</td>
+								<td>NA</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  
+							</tbody>
+						  </table>
+						  </div>
+					</div>
+					
+					<div class="rulesDataContainer tpRelatedRulesContainer">
+					<div class="panel-group" id="accordion1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						  <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#tpRelatedRules" aria-expanded="false" class="">
+									<i class="fa fa-angle-down control-icon"></i>
+									<i class="fa fa-plus"></i> Add Rule Manager
+								</a>
+							</h4>
+						</div>
+						<div id="tpRelatedRules" class="panel-collapse collapse" aria-expanded="false">
+						  <div class="panel-body">
+							
+							<div class="clearfix mSeperator"> </div>
+							<div class="row rulesContainer">
+								<div class="form-group col-md-4">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="">
+									<option>Rules</option>
+									<option selected>Direct Billing Allowed</option>
+									<option>VAT Regime</option>
+									<option>Part of EU</option>
+									<option>Invoice Decimals</option>
+									<option>Country Federal for Tax</option>
+									<option>Counsumption Rule</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+								  </select>
+								</div>
+								
+								<div class="form-group col-md-3 radioOption">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="" id="ruleOptions">
+									<option value="options" selected>Options (Yes/No)</option>
+									<option value="numbers">Numbers</option>
+									<option value="numbers">Percentage</option>
+								  </select>
+								</div>
+								<div class="form-group col-md-3">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control ruleOption" placeholder="" name="">
+									<option>Options</option>
+									<option selected>Yes</option>
+									<option>No</option>
+								  </select>
+								  <input type="text" class="form-control ruleText" placeholder="" name="" style="display:none;">
+								</div>
+								<div class="form-group col-md-2">
+								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
+								</div>
+							</div>							
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="subTitle">Rules List</div>
+					<div class="clearfix"> </div>
+						<div class="table-responsive">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Sr. No.</th>
+								<th>Rules Type</th>
+								<th>Rules Value</th>
+								<th>Actions</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>1</td>
+								<td>Direct Billing Allowed</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>2</td>
+								<td>VAT Regime</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>3</td>
+								<td>Part of EU</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>4</td>
+								<td>Invoice Decimals</td>
+								<td>2</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>5</td>
+								<td>Country Federal for Tax</td>
+								<td>NA</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  
+							</tbody>
+						  </table>
+						  </div>
+					</div>
+					
+					<div class="rulesDataContainer whtRelatedRulesContainer">
+					<div class="panel-group" id="accordion1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						  <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#whtRelatedRules" aria-expanded="false" class="">
+									<i class="fa fa-angle-down control-icon"></i>
+									<i class="fa fa-plus"></i> Add Rule Manager
+								</a>
+							</h4>
+						</div>
+						<div id="whtRelatedRules" class="panel-collapse collapse" aria-expanded="false">
+						  <div class="panel-body">
+							
+							<div class="clearfix mSeperator"> </div>
+							<div class="row rulesContainer">
+								<div class="form-group col-md-4">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="">
+									<option>Rules</option>
+									<option selected>Direct Billing Allowed</option>
+									<option>VAT Regime</option>
+									<option>Part of EU</option>
+									<option>Invoice Decimals</option>
+									<option>Country Federal for Tax</option>
+									<option>Counsumption Rule</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+								  </select>
+								</div>
+								
+								<div class="form-group col-md-3 radioOption">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="" id="ruleOptions">
+									<option value="options" selected>Options (Yes/No)</option>
+									<option value="numbers">Numbers</option>
+									<option value="numbers">Percentage</option>
+								  </select>
+								</div>
+								<div class="form-group col-md-3">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control ruleOption" placeholder="" name="">
+									<option>Options</option>
+									<option selected>Yes</option>
+									<option>No</option>
+								  </select>
+								  <input type="text" class="form-control ruleText" placeholder="" name="" style="display:none;">
+								</div>
+								<div class="form-group col-md-2">
+								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
+								</div>
+							</div>							
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="subTitle">Rules List</div>
+					<div class="clearfix"> </div>
+						<div class="table-responsive">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Sr. No.</th>
+								<th>Rules Type</th>
+								<th>Rules Value</th>
+								<th>Actions</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>1</td>
+								<td>Direct Billing Allowed</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>2</td>
+								<td>VAT Regime</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>3</td>
+								<td>Part of EU</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>4</td>
+								<td>Invoice Decimals</td>
+								<td>2</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>5</td>
+								<td>Country Federal for Tax</td>
+								<td>NA</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  
+							</tbody>
+						  </table>
+						  </div>
+					</div>
+					
+					<div class="rulesDataContainer routingRulesContainer">
+					<div class="panel-group" id="accordion1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						  <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#routingRules" aria-expanded="false" class="">
+									<i class="fa fa-angle-down control-icon"></i>
+									<i class="fa fa-plus"></i> Add Rule Manager
+								</a>
+							</h4>
+						</div>
+						<div id="routingRules" class="panel-collapse collapse" aria-expanded="false">
+						  <div class="panel-body">
+							
+							<div class="clearfix mSeperator"> </div>
+							<div class="row rulesContainer">
+								<div class="form-group col-md-4">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="">
+									<option>Rules</option>
+									<option selected>Direct Billing Allowed</option>
+									<option>VAT Regime</option>
+									<option>Part of EU</option>
+									<option>Invoice Decimals</option>
+									<option>Country Federal for Tax</option>
+									<option>Counsumption Rule</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+								  </select>
+								</div>
+								
+								<div class="form-group col-md-3 radioOption">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="" id="ruleOptions">
+									<option value="options" selected>Options (Yes/No)</option>
+									<option value="numbers">Numbers</option>
+									<option value="numbers">Percentage</option>
+								  </select>
+								</div>
+								<div class="form-group col-md-3">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control ruleOption" placeholder="" name="">
+									<option>Options</option>
+									<option selected>Yes</option>
+									<option>No</option>
+								  </select>
+								  <input type="text" class="form-control ruleText" placeholder="" name="" style="display:none;">
+								</div>
+								<div class="form-group col-md-2">
+								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
+								</div>
+							</div>							
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="subTitle">Rules List</div>
+					<div class="clearfix"> </div>
+						<div class="table-responsive">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Sr. No.</th>
+								<th>Rules Type</th>
+								<th>Rules Value</th>
+								<th>Actions</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>1</td>
+								<td>Direct Billing Allowed</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>2</td>
+								<td>VAT Regime</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>3</td>
+								<td>Part of EU</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>4</td>
+								<td>Invoice Decimals</td>
+								<td>2</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>5</td>
+								<td>Country Federal for Tax</td>
+								<td>NA</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  
+							</tbody>
+						  </table>
+						  </div>
+					</div>
+					
+					<div class="rulesDataContainer invoiceFormatRulesContainer">
+					<div class="panel-group" id="accordion1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						  <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#invoiceFormatRules" aria-expanded="false" class="">
+									<i class="fa fa-angle-down control-icon"></i>
+									<i class="fa fa-plus"></i> Add Rule Manager
+								</a>
+							</h4>
+						</div>
+						<div id="invoiceFormatRules" class="panel-collapse collapse" aria-expanded="false">
+						  <div class="panel-body">
+							
+							<div class="clearfix mSeperator"> </div>
+							<div class="row rulesContainer">
+								<div class="form-group col-md-4">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="">
+									<option>Rules</option>
+									<option selected>Direct Billing Allowed</option>
+									<option>VAT Regime</option>
+									<option>Part of EU</option>
+									<option>Invoice Decimals</option>
+									<option>Country Federal for Tax</option>
+									<option>Counsumption Rule</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+								  </select>
+								</div>
+								
+								<div class="form-group col-md-3 radioOption">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="" id="ruleOptions">
+									<option value="options" selected>Options (Yes/No)</option>
+									<option value="numbers">Numbers</option>
+									<option value="numbers">Percentage</option>
+								  </select>
+								</div>
+								<div class="form-group col-md-3">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control ruleOption" placeholder="" name="">
+									<option>Options</option>
+									<option selected>Yes</option>
+									<option>No</option>
+								  </select>
+								  <input type="text" class="form-control ruleText" placeholder="" name="" style="display:none;">
+								</div>
+								<div class="form-group col-md-2">
+								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
+								</div>
+							</div>							
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="subTitle">Rules List</div>
+					<div class="clearfix"> </div>
+						<div class="table-responsive">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Sr. No.</th>
+								<th>Rules Type</th>
+								<th>Rules Value</th>
+								<th>Actions</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>1</td>
+								<td>Direct Billing Allowed</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>2</td>
+								<td>VAT Regime</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>3</td>
+								<td>Part of EU</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>4</td>
+								<td>Invoice Decimals</td>
+								<td>2</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>5</td>
+								<td>Country Federal for Tax</td>
+								<td>NA</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  
+							</tbody>
+						  </table>
+						  </div>
+					</div>
+					
+					<div class="rulesDataContainer consumptionRelatedRulesContainer">
+					<div class="panel-group" id="accordion1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						  <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#consumptionRelatedRules" aria-expanded="false" class="">
+									<i class="fa fa-angle-down control-icon"></i>
+									<i class="fa fa-plus"></i> Add Rule Manager
+								</a>
+							</h4>
+						</div>
+						<div id="consumptionRelatedRules" class="panel-collapse collapse" aria-expanded="false">
+						  <div class="panel-body">
+							
+							<div class="clearfix mSeperator"> </div>
+							<div class="row rulesContainer">
+								<div class="form-group col-md-4">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="">
+									<option>Rules</option>
+									<option selected>Direct Billing Allowed</option>
+									<option>VAT Regime</option>
+									<option>Part of EU</option>
+									<option>Invoice Decimals</option>
+									<option>Country Federal for Tax</option>
+									<option>Counsumption Rule</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+									<option>VAT Regime</option>
+								  </select>
+								</div>
+								
+								<div class="form-group col-md-3 radioOption">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control" placeholder="" name="" id="ruleOptions">
+									<option value="options" selected>Options (Yes/No)</option>
+									<option value="numbers">Numbers</option>
+									<option value="numbers">Percentage</option>
+								  </select>
+								</div>
+								<div class="form-group col-md-3">
+								  <!-- <label>Settlement Type</label> -->
+								  <select class="form-control ruleOption" placeholder="" name="">
+									<option>Options</option>
+									<option selected>Yes</option>
+									<option>No</option>
+								  </select>
+								  <input type="text" class="form-control ruleText" placeholder="" name="" style="display:none;">
+								</div>
+								<div class="form-group col-md-2">
+								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
+								</div>
+							</div>							
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="subTitle">Rules List</div>
+					<div class="clearfix"> </div>
+						<div class="table-responsive">          
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Sr. No.</th>
+								<th>Rules Type</th>
+								<th>Rules Value</th>
+								<th>Actions</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>1</td>
+								<td>Direct Billing Allowed</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>2</td>
+								<td>VAT Regime</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>3</td>
+								<td>Part of EU</td>
+								<td>Yes</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>4</td>
+								<td>Invoice Decimals</td>
+								<td>2</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  <tr>
+								<td>5</td>
+								<td>Country Federal for Tax</td>
+								<td>NA</td>
+								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+							  </tr>
+							  
+							</tbody>
+						  </table>
+						  </div>
+					</div>
+					
+					<div class="rulesDataContainer memoRulesContainer">
+					<div class="panel-group" id="accordion1">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+						  <h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#memoRules" aria-expanded="false" class="">
+									<i class="fa fa-angle-down control-icon"></i>
+									<i class="fa fa-plus"></i> Add Rule Manager
+								</a>
+							</h4>
+						</div>
+						<div id="memoRules" class="panel-collapse collapse" aria-expanded="false">
 						  <div class="panel-body">
 							
 							<div class="clearfix mSeperator"> </div>
@@ -830,23 +1593,60 @@
 	jQuery('#selectRulesOption').on('change', function() {
 	  if ( this.value == 'userAccessRules')
 	  {
-		jQuery(".otherRulesContainer").removeClass('active');
+		jQuery(".rulesDataContainer ").removeClass('active');
 		jQuery(".userAccessRulesContainer").addClass('active');
-	  } else{
-		jQuery(".userAccessRulesContainer").removeClass('active');
-		jQuery(".otherRulesContainer").addClass('active');
 	  }
 	  if ( this.value == 'nettingSettlementRules')
 	  {
-		jQuery(".otherRulesContainer").removeClass('active');
+		jQuery(".rulesDataContainer ").removeClass('active');
 		jQuery(".nettingSettlementContainer").addClass('active');
 	  }
 	  if ( this.value == 'allocationRelatedRules')
 	  {
-		jQuery(".otherRulesContainer").removeClass('active');
+		jQuery(".rulesDataContainer ").removeClass('active');
 		jQuery(".allocationRelatedRulesContainer").addClass('active');
 	  }
-	  
+	  if ( this.value == 'entityRelatedRules')
+	  {
+		jQuery(".rulesDataContainer ").removeClass('active');
+		jQuery(".entityRelatedRulesContainer").addClass('active');
+	  }
+	  if ( this.value == 'vatRelatedRules')
+	  {
+		jQuery(".rulesDataContainer ").removeClass('active');
+		jQuery(".vatRelatedRulesContainer").addClass('active');
+	  }
+	  if ( this.value == 'tpRelatedRules')
+	  {
+		jQuery(".rulesDataContainer ").removeClass('active');
+		jQuery(".tpRelatedRulesContainer").addClass('active');
+	  }
+	  if ( this.value == 'whtRelatedRules')
+	  {
+		jQuery(".rulesDataContainer ").removeClass('active');
+		jQuery(".whtRelatedRulesContainer").addClass('active');
+	  }
+	  if ( this.value == 'routingRules')
+	  {
+		jQuery(".rulesDataContainer ").removeClass('active');
+		jQuery(".routingRulesContainer").addClass('active');
+	  }
+	  if ( this.value == 'invoiceFormatRules')
+	  {
+		jQuery(".rulesDataContainer ").removeClass('active');
+		jQuery(".invoiceFormatRulesContainer").addClass('active');
+	  }
+	  if ( this.value == 'consumptionRelatedRules')
+	  {
+		jQuery(".rulesDataContainer ").removeClass('active');
+		jQuery(".consumptionRelatedRulesContainer").addClass('active');
+	  }
+	  if ( this.value == 'memoRules')
+	  {
+		jQuery(".rulesDataContainer ").removeClass('active');
+		jQuery(".memoRulesContainer").addClass('active');
+	  }
+
 	  
 	});
 	
