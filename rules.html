@@ -846,113 +846,87 @@
 					</div>
 					
 					<div class="rulesDataContainer consumptionRelatedRulesContainer">
-					<div class="panel-group" id="accordion1">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-						  <h4 class="panel-title">
-							<a data-toggle="collapse" data-parent="#accordion" href="#consumptionRelatedRules" aria-expanded="false" class="">
-									<i class="fa fa-angle-down control-icon"></i>
-									<i class="fa fa-plus"></i> Add Rule Manager
-								</a>
-							</h4>
-						</div>
-						<div id="consumptionRelatedRules" class="panel-collapse collapse" aria-expanded="false">
-						  <div class="panel-body">
-							
-							<div class="clearfix mSeperator"> </div>
-							<div class="row rulesContainer">
-								<div class="form-group col-md-4">
-								  <!-- <label>Settlement Type</label> -->
-								  <select class="form-control" placeholder="" name="">
-									<option>Rules</option>
-									<option selected>Direct Billing Allowed</option>
-									<option>VAT Regime</option>
-									<option>Part of EU</option>
-									<option>Invoice Decimals</option>
-									<option>Country Federal for Tax</option>
-									<option>Counsumption Rule</option>
-									<option>VAT Regime</option>
-									<option>VAT Regime</option>
-									<option>VAT Regime</option>
-									<option>VAT Regime</option>
-									<option>VAT Regime</option>
-								  </select>
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#ConsumptionRule"
+														aria-expanded="false" class="">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> Add Rule Manager
+													</a>
+												</h4>
+											</div>
+											<div id="ConsumptionRule" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+														<div class="form-group col-md-3 ">
+															<label>Service</label>
+															<!-- <select class="form-control" placeholder="" name="" id="service_code">
+										<option>Select</option>
+										<option selected="">UUP07</option>
+										<option>ABCD</option>
+										</select> -->
+															<select class="form-control" placeholder="" name="" ng-model="ConsumptionRule.service"
+																ng-change=""
+																ng-options="service.service_name for service in ServicesList track by service.service_code"></select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Consumption Type</label>
+															<select class="form-control" placeholder="" ng-model="ConsumptionRule.consumption_type"
+																name="">
+																<option value="-1">Select</option>
+																<option value="M">Mixed</option>
+																<option value="I">In Country</option>
+																<option value="A">Abroad</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+
+															<label>Percentage</label>
+															<input type="text" class="form-control"
+																ng-model="ConsumptionRule.consumption_percentage" />
+														</div>
+
+														<div class="form-group col-md-2 pull-right inline accBtnContainer ">
+															<button type="button" class="btn btn-primary" ng-click="saveConsumptionRule()"><i
+																	class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Rules List</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Entity</th>
+													<th>Country</th>
+													<th>Service Name</th>
+													<th>Consumption Type</th>
+													<th>Percentage</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="con in consumptionrulesbyentities">
+													<td>{{con.entity_id}}</td>
+													<td>{{con.seller_country}}</td>
+													<td>{{con.service_code}}</td>
+													<td>{{con.consumption_type }}</td>
+													<td>{{con.consumption_percentage}}</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+
+											</tbody>
+										</table>
+									</div>
 								</div>
-								
-								<div class="form-group col-md-3 radioOption">
-								  <!-- <label>Settlement Type</label> -->
-								  <select class="form-control" placeholder="" name="" id="ruleOptions">
-									<option value="options" selected>Options (Yes/No)</option>
-									<option value="numbers">Numbers</option>
-									<option value="numbers">Percentage</option>
-								  </select>
-								</div>
-								<div class="form-group col-md-3">
-								  <!-- <label>Settlement Type</label> -->
-								  <select class="form-control ruleOption" placeholder="" name="">
-									<option>Options</option>
-									<option selected>Yes</option>
-									<option>No</option>
-								  </select>
-								  <input type="text" class="form-control ruleText" placeholder="" name="" style="display:none;">
-								</div>
-								<div class="form-group col-md-2">
-								<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button> 
-								</div>
-							</div>							
-						  </div>
-						</div>
-					  </div>
-					</div>
-					
-					<div class="subTitle">Rules List</div>
-					<div class="clearfix"> </div>
-						<div class="table-responsive">          
-						  <table class="table">
-							<thead>
-							  <tr>
-								<th>Sr. No.</th>
-								<th>Rules Type</th>
-								<th>Rules Value</th>
-								<th>Actions</th>
-							  </tr>
-							</thead>
-							<tbody>
-							  <tr>
-								<td>1</td>
-								<td>Direct Billing Allowed</td>
-								<td>Yes</td>
-								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-							  </tr>
-							  <tr>
-								<td>2</td>
-								<td>VAT Regime</td>
-								<td>Yes</td>
-								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-							  </tr>
-							  <tr>
-								<td>3</td>
-								<td>Part of EU</td>
-								<td>Yes</td>
-								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-							  </tr>
-							  <tr>
-								<td>4</td>
-								<td>Invoice Decimals</td>
-								<td>2</td>
-								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-							  </tr>
-							  <tr>
-								<td>5</td>
-								<td>Country Federal for Tax</td>
-								<td>NA</td>
-								<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
-							  </tr>
-							  
-							</tbody>
-						  </table>
-						  </div>
-					</div>
 					
 					<div class="rulesDataContainer memoRulesContainer">
 					<div class="panel-group" id="accordion1">
