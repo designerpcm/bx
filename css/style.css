@@ -5959,6 +5959,8 @@ table tbody tr:last-child{border-bottom:2px solid #f8f8fa !important; }
 .fa-upload.bulkUpload{position: absolute;
     top: 50px;
     left: 49%;font-size: 200%;}
+.whtRateContainer table th, .whtRateContainer table td{white-space:normal;}
+.whtRateContainer table td:nth-child(1),.whtRateContainer table td:nth-child(5){width:10%;}
 
 /*===== Drag & Drop =====*/
 .files input {
