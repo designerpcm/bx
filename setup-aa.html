@@ -1,0 +1,1729 @@
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html lang="en">
+
+<head>
+
+	<!-- Basic -->
+	<title>BillerXChange</title>
+
+	<!-- Define Charset -->
+	<meta charset="utf-8">
+
+	<!-- Responsive etatag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Page Description and Author -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+
+	<!-- Bootstrap CSS  -->
+	<link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" media="screen">
+
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen">
+
+	<!-- Slicknav -->
+	<link rel="stylesheet" type="text/css" href="css/slicknav.css" media="screen">
+
+	<!--  CSS Styles  -->
+	<link rel="stylesheet" type="text/css" href="css/colors/blue.css" title="red" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/AdminLTE.min.css" media="screen">
+
+	<!-- Responsive CSS Styles  -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+
+	<!--  JS  -->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.migrate.js"></script>
+	<script type="text/javascript" src="js/modernizrr.js"></script>
+	<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.appear.js"></script>
+	<script type="text/javascript" src="js/count-to.js"></script>
+	<script type="text/javascript" src="js/jquery.textillate.js"></script>
+	<script type="text/javascript" src="js/jquery.lettering.js"></script>
+	<script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax.js"></script>
+	<script type="text/javascript" src="js/jquery.slicknav.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="js/helper.js"></script>
+</head>
+
+<body ng-app="application" ng-controller="SetupMasterController">
+	<div id="overlay-dark">
+		<div class="spinner-box">
+			<div class="spinner-div">
+				<!-- <div class="sk-folding-cube">
+								<div class="sk-cube1 sk-cube"></div>
+								<div class="sk-cube2 sk-cube"></div>
+								<div class="sk-cube4 sk-cube"></div>
+								<div class="sk-cube3 sk-cube"></div>
+							</div> -->
+				<div class="sk-cube-grid">
+					<div class="sk-cube sk-cube1"></div>
+					<div class="sk-cube sk-cube2"></div>
+					<div class="sk-cube sk-cube3"></div>
+					<div class="sk-cube sk-cube4"></div>
+					<div class="sk-cube sk-cube5"></div>
+					<div class="sk-cube sk-cube6"></div>
+					<div class="sk-cube sk-cube7"></div>
+					<div class="sk-cube sk-cube8"></div>
+					<div class="sk-cube sk-cube9"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container -->
+	<div id="container">
+
+		<!-- Start Header -->
+		<div class="hidden-header"></div>
+		<header class="clearfix">
+
+			<div class="navbar navbar-default navbar-top">
+				<div class="container">
+					<div class="navbar-header">
+						<!-- Stat Toggle Nav Link For Mobiles -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+						<!-- End Toggle Nav Link For Mobiles -->
+						<a class="navbar-brand text-bold " href="index.html"><img src="img/BXLogo.png"></a>
+					</div>
+					<div class="navbar-collapse collapse">
+						<!-- Start Navigation List -->
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="invoice.html">Invoice</a>
+								<!-- <ul class="dropdown">
+				  <li><a class="active" href="invoice.html">Invoices</a></li>
+                  <li><a class="active" href="create-invoice.html">Create Invoice</a></li>
+				  <li><a class="active" href="bulk-load-invoice.html">Bulk Load Invoice</a></li>
+                </ul> -->
+							</li>
+							<li>
+								<a href="company-list.html">Company</a>
+								<!-- <ul class="dropdown">
+				  <li><a class="active" href="company-list.html">Company List</a></li>
+                  <li><a class="active" href="company-info.html">Create Company</a></li>
+                </ul> -->
+							</li>
+							<li>
+								<a href="buyer.html">Buyer</a>
+							</li>
+							<li>
+								<a href="transactions.html">Transactions</a>
+								<!-- <ul class="dropdown">
+				  <li><a href="transactions.html">Transactions</a></li>
+                  <li><a href="ledger.html">Ledger</a></li>
+                </ul> -->
+							</li>
+							<li>
+								<a href="settlement.html">Settlement</a>
+							</li>
+							<li>
+								<a class="active" href="setup.html">Setup</a>
+							</li>
+							<li class="user user-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+									<img src="img/user.png" class="user-image" alt="User Image">
+
+								</a>
+								<ul class="dropdown-menu">
+									<!-- User image -->
+									<li class="user-header">
+										<img src="img/viren.jpeg" class="img-circle" alt="User Image">
+										<p>
+											<span class="globalEntityName">Viren K</span>- CEO
+											<small>Member since Nov. 2019</small>
+										</p>
+									</li>
+									<!-- Menu Body -->
+									<!-- Menu Footer-->
+									<li class="user-footer">
+										<div class="pull-right">
+											<a href="javascript:;" onclick="logout()" class="btn btn-default btn-flat btn-sm">Sign out</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- End Navigation List -->
+					</div>
+				</div>
+
+			</div>
+
+		</header>
+
+
+
+		<div id="content" class="" data-ng-init="SetupMasterInit()">
+			<div class="container">
+				<div class="nav-tabs-custom">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="setup.html">Master Data</a></li>
+						<li class=""><a href="rules.html">Rules</a></li>
+					</ul>
+				</div>
+				<div class="page-content tab-content">
+					<div class="tab-pane active" id="masterData">
+						<div class="row">
+							<div class="subHeader">Master Data</div>
+
+							<div class="bgLightBlue overflowAuto">
+								<div class="form-group form-horizontal">
+									<label class="col-sm-2 control-label paddingL0" style="text-align:left;">Select Master Data: </label>
+									<div class="col-sm-3">
+										<select class="form-control" id="masterDataOptions">
+											<option value="legalEntity">Legal Entity</option>
+											<option value="glAccounts">GL Accounts</option>
+											<option value="costCenter">Cost Center</option>
+											<option value="country">Country</option>
+											<option value="services">Services</option>
+											<option value="products">Products</option>
+											<option value="metrics">Metrics</option>
+											<option value="pl">P & L</option>
+											<option value="buc">BUC</option>
+											<option value="accountingPeriod">Accounting Period</option>
+											<option value="bank">Bank</option>
+											<option value="WHTRate">WHT Rate</option>
+											<option value="TPRate">TP Rate</option>
+											<option value="VATRate">VAT Rate</option>
+											<option value="users">Users</option>
+											<option value="userRoles">User Roles</option>
+										</select>
+									</div>
+									<label class="col-sm-2 control-label text-left">Add Master Data: </label>
+									<div class="col-sm-3">
+										<input type="text" class="form-control" />
+									</div>
+									<div class="col-sm-1">
+										<button type="button" class="btn btn-primary"><i class="fa fa-plus-circle"> </i> Add</button>
+									</div>
+								</div>
+								<div class="clearfix mSeperator"> </div>
+
+								<div class="legalEntityContainer active masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMasterData" aria-expanded="false"
+														class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> Legal Entity Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMasterData" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+														<div class="form-group col-md-3 ">
+															<label>Entity Type</label>
+															<div>
+																<label class="checkbox-inline">
+																	<input type="checkbox" value="">Home
+																</label>
+																<label class="checkbox-inline">
+																	<input type="checkbox" value="">Host
+																</label>
+																<label class="checkbox-inline">
+																	<input type="checkbox" value="">HQ
+																</label>
+															</div>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Entity ID</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Entity Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Address</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Country</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>India</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>State</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>India</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>City</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>India</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Parent Entity</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>India</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Netting Type</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>India</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>VAT No.</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>India</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Ps Branch</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Branch Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Branch Country</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>India</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Business Tier 1</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>Option 1</option>
+																<option>Option 2</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Business Tier 2</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>Option 1</option>
+																<option>Option 2</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Business Tier 3</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>Option 1</option>
+																<option>Option 2</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Zip</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Incorporation Date</label>
+															<input type="date" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Incorporation Country</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>India</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Incorporation State</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>India</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Federal Tax Filing Group</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>Option 1</option>
+																<option>Option 2</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Currency</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>USD</option>
+																<option>INR</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+
+														<div class="clearfix"> </div>
+														<div class="form-group col-md-2 pull-right">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: Legal Entity</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Entity Code</th>
+													<th>Entity Name</th>
+													<th>Address</th>
+													<th>Country</th>
+													<th>State</th>
+													<th>City</th>
+													<th>Parent Entity</th>
+													<th>Netting Type</th>
+													<th>Entity Type</th>
+													<th>VAT No.</th>
+													<th>Branch</th>
+													<th>Branch Name</th>
+													<th>Branch Country</th>
+													<th>Business Tier 1 </th>
+													<th>Business_Tier 2 </th>
+													<th>Business_Tier 3 </th>
+													<th>zip </th>
+													<th>Incorporation date </th>
+													<th>Incorporation country </th>
+													<th>Incorporation state </th>
+													<th>Federal Tax Filing Group </th>
+													<th>Currency </th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="entity in entitys track by $index">
+													<td>{{entity.entity_code}}</td>
+													<td>{{entity.entity_name}}</td>
+													<td>{{entity.entity_address}}</td>
+													<td>{{entity.country}}</td>
+													<td>{{entity.state}}</td>
+													<td>{{entity.city}}</td>
+													<td>{{entity.parent_entity}}</td>
+													<td>{{entity.netting_type}}</td>
+													<td>{{entity.entity_type}}</td>
+													<td>{{entity.vat_no}}</td>
+													<td>{{entity.branch}}</td>
+													<td>{{entity.branch_name}}</td>
+													<td>{{entity.branch_country}}</td>
+													<td>{{entity.business_tier_1}}</td>
+													<td>{{entity.business_tier_2}}</td>
+													<td>{{entity.business_tier_3}}</td>
+													<td>{{entity.zip}}</td>
+													<td>{{entity.inc_date}}</td>
+													<td>{{entity.inc_country}}</td>
+													<td>{{entity.inc_state}}</td>
+													<td>{{entity.ftfg}}</td>
+													<td>{{entity.currency}}</td>
+													<td>{{entity.active}}</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+
+
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="servicesContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_services"
+														aria-expanded="false" class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> Services Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_services" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+														<div class="form-group col-md-3 ">
+															<label>Service Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Service Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: Services</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Service Code</th>
+													<th>Service Name</th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="Service in services_list track by $index">
+													<td>{{Service.Service_Code}}</td>
+													<td>{{Service.Service_Name}}</td>
+													<td>Yes</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="productsContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_products"
+														aria-expanded="false" class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> Products Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_products" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+														<div class="form-group col-md-3 ">
+															<label>Product Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Product Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: Products</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Product Code</th>
+													<th>Product Name</th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="Service in products_list track by $index">
+													<td>{{Service.Product_Code}}</td>
+													<td>{{Service.Product_Name}}</td>
+													<td>Yes</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="metricsContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_metrics" aria-expanded="false"
+														class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> Metric Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_metrics" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+														<div class="form-group col-md-3 ">
+															<label>Metric Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Metric Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: Metric</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Metric Code</th>
+													<th>Metric Name</th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="Service in metrics_list track by $index">
+													<td>{{Service.Metric_Code}}</td>
+													<td>{{Service.Metric_Name}}</td>
+													<td>Yes</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="plContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_pl" aria-expanded="false"
+														class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> P & L Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_pl" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+
+														<div class="form-group col-md-3 ">
+															<label>P & L Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: P & L</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>P & L Code</th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="plCode in plCodes track by $index">
+													<td>{{plCode.pl_code}}</td>
+													<td>{{plCode.active}}</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="bucContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_buc" aria-expanded="false"
+														class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> BUC Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_buc" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+
+														<div class="form-group col-md-3 ">
+															<label>BUC Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: BUC</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>BUC Code</th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="buc in bucs track by $index">
+													<td>{{buc.buc_code}}</td>
+													<td>{{buc.active}}</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="accountPeriodContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_accountPeriod"
+														aria-expanded="false" class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> Accounting Period Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_accountPeriod" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+
+														<div class="form-group col-md-3 ">
+															<label>Period</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: Accounting Period</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Period</th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="aperiod in Accperiod track by $index">
+													<td>{{aperiod.period}}</td>
+													<td>{{aperiod.active}}</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="bankContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_bank" aria-expanded="false"
+														class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> Bank Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_bank" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+
+														<div class="form-group col-md-2 ">
+															<label>Bank Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Account Number</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Account Balance</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-2 ">
+															<label>Currency</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>USD</option>
+																<option>INR</option>
+															</select>
+														</div>
+
+														<div class="form-group col-md-2 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<div class="clearfix"> </div>
+														<div class="form-group col-md-2 pull-right accBtnContainer">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: Bank</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Bank Name</th>
+													<th>Account Number</th>
+													<th>Account Balance</th>
+													<th>Currency</th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="Bank in Banks track by $index">
+													<td>{{Bank.bank_name}}</td>
+													<td>{{Bank.account_number}}</td>
+													<td>{{Bank.account_balance}}</td>
+													<td>{{Bank.currency}}</th>
+													<td>{{Bank.active}}</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="usersContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_users" aria-expanded="false"
+														class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> Users Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_users" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+
+														<div class="form-group col-md-3 ">
+															<label>User Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Password</label>
+															<input type="password" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Address</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Country</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected="">India</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>State</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected="">India</option>
+																<option>USA</option>
+															</select>
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>City</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected="">India</option>
+																<option>USA</option>
+															</select>
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<div class="clearfix"> </div>
+														<div class="form-group col-md-2 pull-right accBtnContainer">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: Users</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>User Name</th>
+													<!-- <th>Password</th> -->
+													<th>Address</th>
+													<th>Country</th>
+													<th>State</th>
+													<th>City</th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="User in Users track by $index">
+													<td>{{User.user_id}}</td>
+													<!-- <td>{{User.password}}</td> -->
+													<td>{{User.address}}</td>
+													<td>{{User.country}}</th>
+													<td>{{User.state}}</th>
+													<td>{{User.city}}</th>
+													<td>{{User.active}}</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="userRolesContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_userRoles"
+														aria-expanded="false" class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> User Roles Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_userRoles" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+
+														<div class="form-group col-md-3 ">
+															<label>User Name</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>User 1</option>
+																<option>User 2</option>
+															</select>
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>User Roles</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>View Only</option>
+																<option>Admin</option>
+																<option>Settlement</option>
+															</select>
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: User Roles</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>User Role</th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="role in roles track by $index">
+													<td>{{role.roles}}</td>
+													<td>{{role.active}}</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="glAccountsContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_glAccounts"
+														aria-expanded="false" class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> GL Accounts Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_glAccounts" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+
+														<div class="form-group col-md-3 ">
+															<label>Account Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Account Description</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: GL Accounts</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Account Code</th>
+													<th>Account Description</th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="glAccount in glAccounts track by $index">
+													<td>{{glAccount.gl_account_code}}</td>
+													<td>{{glAccount.gl_account_name}}</td>
+													<td>{{glAccount.active }}</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="costCenterContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_costCenter" false"
+														class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> Cost Center Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_costCenter" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+
+														<div class="form-group col-md-3 ">
+															<label>Cost Center Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Cost Center Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: Cost Center</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Cost Center Code</th>
+													<th>Cost Center Name</th>
+													<th>Active</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="costCenter in costCenters track by $index">
+													<td>{{costCenter.cost_center_code}}</td>
+													<td>{{costCenter.cost_center_name}}</td>
+													<td>{{costCenter.active}}</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+
+
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="countryContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_country" false"
+														class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> Country Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_country" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+
+														<div class="form-group col-md-2 ">
+															<label>Country Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-2 ">
+															<label>ISO Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Country Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-2 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option>Select</option>
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: Country</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Country Code</th>
+													<th>ISO Code</th>
+													<th>Country Name</th>
+													<th>Actions</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="country in countrys track by $index">
+													<td>{{country.COUNTRY_ID}}</td>
+													<td>{{country.ISO_COUNTRY_CODE}}</td>
+													<td>{{country.COUNTRY_NAME}}</td>
+													<td><i class="fa fa-edit"> </i> | <i class="fa fa-trash-o"> </i></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="whtRateContainer masterDataContainer active">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_whtRate"
+														aria-expanded="false" class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> WHT Rate Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_whtRate" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+														<div class="form-group col-md-3 ">
+															<label>Product Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Product Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: WHT Rate</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Country</th>
+													<th >Service </th>
+													<th>Product  </th>
+													<th >Metric</th>
+													<th>WHT Rate</th>
+												
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="tax in ServiceProductTax track by $index">
+													<td>{{tax.Receiving_Country}}</td>
+													<td >{{tax.Service_Name}}</td>
+													<td >{{tax.Product_Name }}</td>
+													<td >{{tax.Metric_Name}}</td>
+													<td>{{tax.WHT_Rate}}</td>
+												</tr>												
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tpRateContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_tpRate"
+														aria-expanded="false" class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> WHT Rate Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_tpRate" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+														<div class="form-group col-md-3 ">
+															<label>Product Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Product Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: WHT Rate</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Country</th>
+													<th style="width: 40px">Service </th>
+													<th style="width: 40px">Product  </th>
+													<th style="width: 40px">Metric</th>
+													<th>TP Rate</th>
+												
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="tax in ServiceProductTax track by $index">
+													<td style="width: 5px">{{tax.Receiving_Country}}</td>
+													<td style="width: 20px" >{{tax.Service_Name}}</td>
+													<td style="width: 20px">{{tax.Product_Name }}</td>
+													<td style="width: 20px">{{tax.Metric_Name}}</td>
+													<td>{{tax.tp_Rate}}</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="vatRateContainer masterDataContainer">
+									<div class="panel-group" id="accordion1">
+										<div class="panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion" href="#addMD_vatRate"
+														aria-expanded="false" class="collapsed">
+														<i class="fa fa-angle-down control-icon"></i>
+														<i class="fa fa-plus"></i> WHT Rate Manager
+													</a>
+												</h4>
+											</div>
+											<div id="addMD_vatRate" class="panel-collapse collapse" aria-expanded="false">
+												<div class="panel-body">
+
+													<div class="clearfix mSeperator"> </div>
+													<div class="row rulesContainer">
+														<div class="form-group col-md-3 ">
+															<label>Product Code</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+														<div class="form-group col-md-3 ">
+															<label>Product Name</label>
+															<input type="text" class="form-control" placeholder="" name="">
+														</div>
+
+														<div class="form-group col-md-3 ">
+															<label>Active</label>
+															<select class="form-control" placeholder="" name="">
+																<option selected>Yes</option>
+																<option>No</option>
+															</select>
+														</div>
+
+														<!-- <div class="clearfix"> </div> -->
+														<div class="form-group col-md-2 pull-right accBtnContainer inline">
+															<button type="button" class="btn btn-primary"><i class="fa fa-save"> </i> Save</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="subTitle">Master Data List: WHT Rate</div>
+									<div class="clearfix"> </div>
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Country</th>
+													<th style="width: 40px">Service </th>
+													<th style="width: 40px">Product  </th>
+													<th style="width: 40px">Metric</th>
+													<th>VAT Rate</th>
+												
+												</tr>
+											</thead>
+											<tbody>
+												<tr ng-repeat="tax in ServiceProductTax track by $index">
+													<td style="width: 5px">{{tax.Receiving_Country}}</td>
+													<td style="width: 20px" >{{tax.Service_Name}}</td>
+													<td style="width: 20px">{{tax.Product_Name }}</td>
+													<td style="width: 20px">{{tax.Metric_Name}}</td>
+													<td>{{tax.vat_Rate}}</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	</div>
+	<!-- End content -->
+
+
+	<!-- Start Footer -->
+	<footer>
+		<div class="container">
+			<!-- Start Copyright -->
+			<div class="copyright-section">
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						<p>&copy; 2018 BillerXChange - All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+			<!-- End Copyright -->
+
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	</div>
+	<!-- End Container -->
+
+	<!-- Go To Top Link -->
+	<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$(".addLine").click(function () {
+				$('.addedLine:last-child').clone().appendTo(".linesContainer table .results");
+			});
+			$('.linesContainer').find(".fa-trash-o").click(function () {
+				alert(2);
+				$(this).closest(".addedLine").remove();
+			});
+
+			jQuery('#ruleOptions').on('change', function () {
+				if (this.value == 'numbers') {
+					jQuery(".ruleText").show();
+					jQuery(".ruleOption").hide();
+				}
+				if (this.value == 'options') {
+					jQuery(".ruleText").hide();
+					jQuery(".ruleOption").show();
+				}
+			});
+
+			jQuery('#masterDataOptions').on('change', function () {
+				if (this.value == 'legalEntity') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".legalEntityContainer").addClass('active');
+				}
+				if (this.value == 'glAccounts') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".glAccountsContainer").addClass('active');
+				}
+				if (this.value == 'costCenter') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".costCenterContainer").addClass('active');
+				}
+				if (this.value == 'country') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".countryContainer").addClass('active');
+				}
+				if (this.value == 'services') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".servicesContainer").addClass('active');
+				}
+				if (this.value == 'products') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".productsContainer").addClass('active');
+				}
+				if (this.value == 'metrics') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".metricsContainer").addClass('active');
+				}
+				if (this.value == 'pl') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".plContainer").addClass('active');
+				}
+				if (this.value == 'buc') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".bucContainer").addClass('active');
+				}
+				if (this.value == 'accountingPeriod') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".accountPeriodContainer").addClass('active');
+				}
+				if (this.value == 'bank') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".bankContainer").addClass('active');
+				}
+				if (this.value == 'users') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".usersContainer").addClass('active');
+				}
+				if (this.value == 'userRoles') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".userRolesContainer").addClass('active');
+				}
+				if (this.value == 'WHTRate') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".whtRateContainer").addClass('active');
+				}
+				if (this.value == 'TPRate') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".tpRateContainer").addClass('active');
+				}
+				if (this.value == 'VATRate') {
+					jQuery(".masterDataContainer").removeClass('active');
+					jQuery(".vatRateContainer").addClass('active');
+				}
+					
+
+			});
+
+			jQuery('#selectRulesOption').on('change', function () {
+				if (this.value == 'userAccessRules') {
+					jQuery(".otherRulesContainer").removeClass('active');
+					jQuery(".userAccessRulesContainer").addClass('active');
+				} else {
+					jQuery(".userAccessRulesContainer").removeClass('active');
+					jQuery(".otherRulesContainer").addClass('active');
+				}
+				if (this.value == 'nettingSettlementRules') {
+					jQuery(".otherRulesContainer").removeClass('active');
+					jQuery(".nettingSettlementContainer").addClass('active');
+				}
+			});
+
+			jQuery('#selectNandSRules').on('change', function () {
+				if (this.value == 'nettingType') {
+					jQuery(".nettingType").addClass('active');
+				} else { jQuery(".nettingType").removeClass('active'); }
+			});
+
+
+		});
+	</script>
+	<script type="text/javascript" src="app.js"> </script>
+
+</body>
+
+</html>
